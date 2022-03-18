@@ -34,7 +34,6 @@ export default function Navbar() {
               
               <li className="nav-item">
                 <Link className="nav-link mx-5" to="/contact">Contact Us</Link>
-                <a className="nav-link mx-5" href="/ContactUS">Contact Us</a>
               </li>
             </ul>
             <form className="d-flex">
