@@ -4,6 +4,11 @@ import Slider from "./Components/Slider/Slider";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import About from "./Components/About";
+import './App.css';
+import ContactUS from './Components/ContactUS';
+import Navbar from './Components/Navbar';
+import Slider from './Components/Slider/Slider'
+
 
 function App() {
   return (
@@ -17,6 +22,9 @@ function App() {
       <Route path = "/about" element = {<About />} />
       </Routes>
       </Router>
+    <Navbar/>
+      <Slider/>
+      <ContactUS/>
     </>
   );
 }
