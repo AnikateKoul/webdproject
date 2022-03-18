@@ -5,7 +5,7 @@ export default function Navbar() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             Title
           </a>
           <button
@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active mx-5" aria-current="page" href="/home">
+                <a className="nav-link active mx-5" aria-current="page" href="/">
                   Home
                 </a>
               </li>
@@ -33,7 +33,7 @@ export default function Navbar() {
               </li>
               
               <li className="nav-item">
-                <a className="nav-link mx-5" href="/">Contact Us</a>
+                <a className="nav-link mx-5" href="/ContactUS">Contact Us</a>
               </li>
             </ul>
             <form className="d-flex">
