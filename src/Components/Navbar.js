@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light" style={{boxShadow: "10px 10px 10px grey", opacity: "0.85"}}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Title
@@ -26,14 +26,25 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
+              <li className="nav-item dropdown">
+          <a className="nav-link nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="#">Place1</a></li>
+            <li><a className="dropdown-item" href="#">Place2</a></li>
+            <li><a className="dropdown-item" href="#">Place3</a></li>
+            <li><a className="dropdown-item" href="#">Place4</a></li>
+            <li><a className="dropdown-item" href="#">Place5</a></li>
+          </ul>
+        </li>
               <li className="nav-item">
-                <Link className="nav-link mx-3" to="/about">
+                <Link className="nav-link nav-link active mx-3" to="/about">
                   About Us
                 </Link>
               </li>
-              
               <li className="nav-item">
-                <Link className="nav-link mx-3" to="/contact">Contact Us</Link>
+                <Link className="nav-link nav-link active mx-3" to="/contact">Contact Us</Link>
               </li>
             </ul>
             <form className="d-flex">
