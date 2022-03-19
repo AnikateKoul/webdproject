@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconName } from "react-icons/io5";
+// import { IconName } from "react-icons/io5";
 
 export default function Footer() {
   return (
