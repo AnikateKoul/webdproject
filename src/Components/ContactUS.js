@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ContactUS() {
   return (
@@ -139,9 +140,9 @@ export default function ContactUS() {
                   <label htmlFor="form-message">How we can help?</label>
                 </div>
 
-                <button type="submit" className="btn btn-info btn-sm ml-0">
+                <Link to="/thank" ><button type="submit" className="btn btn-info btn-sm ml-0">
                   Submit<i className="far fa-paper-plane ml-2"></i>
-                </button>
+                </button></Link>
               </div>
             </div>
           </section>

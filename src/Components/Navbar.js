@@ -27,8 +27,8 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-          <a className="nav-link nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gallery
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Destinations
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a className="dropdown-item" href="#">Place1</a></li>
@@ -39,14 +39,19 @@ export default function Navbar() {
           </ul>
         </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link active mx-3" to="/about">
+                <Link className="nav-link active mx-3" to="/about">
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link active mx-3" to="/contact">Contact Us</Link>
+                <Link className="nav-link active mx-3" to="/contact">Contact Us</Link>
               </li>
-            </ul>
+              <li className="nav-item">
+                <Link className="nav-link active mx-3" to="/gallery">
+                  Gallery
+                </Link>
+              </li>
+            </ul>            
             <form className="d-flex">
               <input
                 className="form-control me-2"
