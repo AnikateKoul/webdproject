@@ -147,6 +147,7 @@ export default function ContactUS() {
           </section>
         </div>
       </div>
+      <div style={{height: "500px"}}></div>
     </>
   );
 }
