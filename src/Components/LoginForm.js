@@ -1,39 +1,48 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Login.css';
 
 export default function LoginForm() {
   return (
     <>  
         <div style={{ height: "75px" }}></div>
-      <div className="pt-5">  
-  <div className="global-container">  
-    <div className="card login-form">  
-    <div className="card-body">  
-    <strong><h1 className="card-title text-center my-4 ">Title</h1></strong>
-        <h5 className="card-title text-center">Login to start your journey</h5>
-        <div className="card-text">  
-            <form>  
-                <div className="form-group my-3">  
-                    <label htmlFor="exampleInputEmail1"> Enter Email address </label>  
-                    <input type="email" className="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp"/>  
-                </div>  
-                <div className="form-group my-4" >  
-                    <label htmlFor="exampleInputPassword1">Enter Password </label>  
-                    <a href="/" style={{float:"right",fontSize:"12px"}}> Forgot password? </a>  
-                    <input type="password" className="form-control form-control-sm" id="exampleInputPassword1"/>  
-                </div>
-                <div className="buttonsign">  
-                <button type="submit" id="signIn" className="btn btn-primary btn-block text-center"> Sign in </button>
-                </div>
-                <div className="sign-up">  
-                    Don't have an account? <a href="#"> Create One </a>  
-                </div>  
-            </form>  
-        </div>  
-    </div>  
-</div>  
-</div>
-</div>
+        <section className="gradient-custom">
+  <div className="container py-5 h-100">
+    <div className="row d-flex justify-content-center align-items-center h-100">
+      <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div className="card bg-dark text-white" style={{borderRadius: "1rem"}}>
+          <div className="card-body p-5 text-center">
+
+            <div className="mb-md-5 mt-md-4 pb-5">
+
+              <h2 className="fw-bold mb-2 text-uppercase">Title</h2>
+              <p className="text-white-50 mb-5">Please enter your login and password!</p>
+
+              <div className="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" className="form-control form-control-lg" />
+                <label className="form-label" for="typeEmailX">Email</label>
+              </div>
+
+              <div className="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" className="form-control form-control-lg" />
+                <label className="form-label" for="typePasswordX">Password</label>
+              </div>
+
+              <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
+
+              <button className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+            </div>
+
+            <div>
+              <p className="mb-0">Don't have an account? <Link to="/signup" className="text-white-50 fw-bold">Sign Up</Link></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 }

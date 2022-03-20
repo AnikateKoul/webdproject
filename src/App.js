@@ -7,6 +7,7 @@ import ContactUS from "./Components/ContactUS";
 import Footer from "./Components/Footer";
 import Thanks from "./Components/Thanks";
 import LoginForm from "./Components/LoginForm";
+import SignupForm from "./Components/SignupForm";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/login" element={<LoginForm />} />
+        </Routes>
+        <Routes>
+          <Route path="/signup" element={ <SignupForm/> } />
         </Routes>
         <Footer />
       </Router>

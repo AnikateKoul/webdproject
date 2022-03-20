@@ -106,12 +106,23 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/login">
+                <Link className="nav-link" to="/signup">
                   <button className="btn btn-primary mx-2">Sign Up</button>
                 </Link>
               </li>
             </ul>
           </div>
+          <div className="form-check form-switch text-dark mx-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
+                    Enable dark mode
+              </label>
+            </div>
         </div>
       </nav>
     </>
