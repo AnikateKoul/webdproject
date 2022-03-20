@@ -66,6 +66,7 @@ export default function SignupForm() {
                             type="password"
                             id="form3Example4cdg"
                             className="form-control form-control-lg"
+                            required
                           />
                           <label
                             className="form-label"

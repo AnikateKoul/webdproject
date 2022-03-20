@@ -13,13 +13,16 @@ import Place2 from "./Components/Destinations/Place2";
 import Place3 from "./Components/Destinations/Place3";
 import Place4 from "./Components/Destinations/Place4";
 import Place5 from "./Components/Destinations/Place5";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+      <ScrollToTop>
+      {/* <App /> */}
         <Routes>
           <Route path="/" element={<Slider />} />
         </Routes>
@@ -53,6 +56,7 @@ function App() {
         <Routes>
           <Route path="/place5" element={ <Place5/> } />
         </Routes>
+        </ScrollToTop>
         <Footer />
       </Router>
 
