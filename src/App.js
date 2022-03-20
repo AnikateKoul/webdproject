@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Slider from "./Components/Slider/Slider";
+import Slider from "./Components/Slider";
 import React from "react";
 import About from "./Components/About";
 import ContactUS from "./Components/ContactUS";

@@ -10,13 +10,13 @@ export default function LoginForm() {
   <div className="container py-5 h-100">
     <div className="row d-flex justify-content-center align-items-center h-100">
       <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div className="card bg-dark text-white" style={{borderRadius: "1rem"}}>
-          <div className="card-body p-5 text-center">
+        <div className="card bg-light text-dark" style={{borderRadius: "1rem"}}>
+          <div className="card-body p-5 text-center" style={{background: "white", borderRadius: "15px"}}>
 
             <div className="mb-md-5 mt-md-4 pb-5">
 
               <h2 className="fw-bold mb-2 text-uppercase">Title</h2>
-              <p className="text-white-50 mb-5">Please enter your login and password!</p>
+              <p className="text-dark-50 mb-5">Please enter your login and password!</p>
 
               <div className="form-outline form-white mb-4">
                 <input type="email" id="typeEmailX" className="form-control form-control-lg" />
@@ -28,13 +28,13 @@ export default function LoginForm() {
                 <label className="form-label" for="typePasswordX">Password</label>
               </div>
 
-              <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
+              <p className="small mb-5 pb-lg-2"><a className="text-dark-50" href="#!">Forgot password?</a></p>
 
-              <button className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              <button className="btn btn-success btn-block btn-lg gradient-custom-4 text-body" id="loginbtn" type="submit">Login</button>
             </div>
 
             <div>
-              <p className="mb-0">Don't have an account? <Link to="/signup" className="text-white-50 fw-bold">Sign Up</Link></p>
+              <p className="mb-0">Don't have an account? <Link to="/signup" className="text-dark-50 fw-bold">Sign Up</Link></p>
             </div>
 
           </div>
