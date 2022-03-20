@@ -5,8 +5,8 @@ const ScrollToTop = (props) => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo({
-        top: '400',
-        behavior: 'smooth',
+        top: '0px',
+        behavior: "auto",
       })}
       );
   return <>{props.children}</>
