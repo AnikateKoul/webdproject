@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Slider from "./Components/Slider";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import About from "./Components/About";
 import ContactUS from "./Components/ContactUS";
 import Footer from "./Components/Footer";
@@ -16,16 +16,31 @@ import Place5 from "./Components/Destinations/Place5";
 import ScrollToTop from "./Components/ScrollToTop";
 // import FlipCard from "./Components/FlipCard";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import axios from "axios";
+import Users from "./Users";
 
 function App() {
+  const [ user, setUser] = useState([]);
+  const fetchData = () => {
+    fetch("https://randomuser.me/api?nat=us&results=20&page=1")
+    .then((res) => {
+      return res.json();
+    }).then((data) => {
+      let datas = data.results
+      setUser(datas);
+      console.log(datas);
+    })
+  }
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <>
       <Router>
         <Navbar />
       <ScrollToTop>
-      {/* <App /> */}
         <Routes>
-          <Route path="/" element={<Slider />} />
+          <Route path="/" element={ <><Slider /> <Users user = {user}/></>} />
         </Routes>
         <Routes>
           <Route path="/about" element={<><About /> </>} />
@@ -60,6 +75,8 @@ function App() {
         </ScrollToTop>
         <Footer />
       </Router>
+
+      
 
     </>
   );
