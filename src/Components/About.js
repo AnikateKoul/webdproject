@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container" style={{paddingTop: "70px"}}>
+    <div className="container" style={{ paddingTop: "90px"}}>
       <div className="accordion accordion-flush" id="accordionFlushExample">
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
@@ -86,6 +86,39 @@ export default function About() {
               json format which are re-rendered on our website in a beautiful
               way to help our users find the best possible hotel and save their
               hard earned money and precious time.
+            </div>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingFour">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Our Team
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              We are a group of hardworking and talented individuals who aspire to make this world a better place
+              <h4>People : </h4>
+              <ul>
+                <li>Achal Gupta</li>
+                <li>Anikate Koul</li>
+                <li>Nikhil Ranjan</li>
+                <li>Sahil Singh</li>
+                <li>Vikrant Kumar</li>
+                <li>Dhruv Sangra</li>
+              </ul>
             </div>
           </div>
         </div>

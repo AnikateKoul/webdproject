@@ -41,7 +41,8 @@ export default function SignupForm() {
                         <Form.Field>
                           <input placeholder="Password" type="password"  {...register("password", { 
                             required: true, 
-                            
+                            minLength: 6,
+                            maxLength: 15
                         })}/>
                           <label>Password</label>
                         </Form.Field>

@@ -14,6 +14,7 @@ import Place3 from "./Components/Destinations/Place3";
 import Place4 from "./Components/Destinations/Place4";
 import Place5 from "./Components/Destinations/Place5";
 import ScrollToTop from "./Components/ScrollToTop";
+// import FlipCard from "./Components/FlipCard";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           <Route path="/" element={<Slider />} />
         </Routes>
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<><About /> </>} />
         </Routes>
         <Routes>
           <Route path="/contact" element={<ContactUS /> } />

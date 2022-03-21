@@ -5,7 +5,7 @@ export default function Navbar() {
     <>
       <nav
         className="navbar fixed-top navbar-expand-lg navbar-light bg-light"
-        style={{ boxShadow: "10px 10px 10px grey", opacity: "0.85" }}
+        style={{ boxShadow: "10px 10px 10px grey", opacity: "0.85", marginBottom: "30px"}}
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
