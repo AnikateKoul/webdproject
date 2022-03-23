@@ -1,9 +1,15 @@
-import React from "react";
+import React ,{useState} from "react";
 
-export default function About() {
+export default function About(props) {
+
+  let myStyle = {
+    color : props.mode==='dark'?'white':'#212529',
+    backgroundColor: props.mode==='dark'?'#212529':'white',
+  }
+
   return (
     <div className="container" style={{ paddingTop: "90px"}}>
-      <div className="accordion accordion-flush" id="accordionFlushExample">
+      <div className="accordion accordion-flush" id="accordionFlushExample" style={myStyle}>
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
             <button
@@ -13,6 +19,7 @@ export default function About() {
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
+              style={myStyle}
             >
               Our Mission
             </button>
@@ -23,7 +30,7 @@ export default function About() {
             aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
               Our team of creative and driven entrepreneurs come together to
               build a hotel search that is fast, intuitive and unbiased, with
               the longstanding mission… To be the traveler's first and
@@ -40,6 +47,7 @@ export default function About() {
               data-bs-target="#flush-collapseTwo"
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
+              style={myStyle}
             >
               Our Vision
             </button>
@@ -50,7 +58,7 @@ export default function About() {
             aria-labelledby="flush-headingTwo"
             data-bs-parent="#accordionFlushExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
               We want to enable all our advertisers, from independent hoteliers
               to the largest hotel chains, to grow their businesses by accessing
               our broad audience of monthly users. We also want to enable our
@@ -68,6 +76,7 @@ export default function About() {
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
               aria-controls="flush-collapseThree"
+              style={myStyle}
             >
               Our Modus Operandi
             </button>
@@ -78,7 +87,7 @@ export default function About() {
             aria-labelledby="flush-headingThree"
             data-bs-parent="#accordionFlushExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
               We are an API based website that fetch the best results based on
               the users choice and liking. Our hard-working team aspires to
               deliver the best possible user experience to our customer through
@@ -98,6 +107,7 @@ export default function About() {
               data-bs-target="#flush-collapseFour"
               aria-expanded="false"
               aria-controls="flush-collapseFour"
+              style={myStyle}
             >
               Our Team
             </button>
@@ -108,7 +118,7 @@ export default function About() {
             aria-labelledby="flush-headingFour"
             data-bs-parent="#accordionFlushExample"
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
               We are a group of hardworking and talented individuals who aspire to make this world a better place
               <h4>People : </h4>
               <ul>

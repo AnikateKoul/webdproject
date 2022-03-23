@@ -20,7 +20,11 @@ import axios from "axios";
 import Users from "./Users";
 
 function App() {
+
+  const [mode, setMode] = useState("light");
+
   const [ user, setUser] = useState([]);
+
   const fetchData = () => {
     fetch("https://randomuser.me/api?nat=us&results=20&page=1")
     .then((res) => {
@@ -34,16 +38,28 @@ function App() {
   useEffect(() => {
     fetchData();
   }, []);
+
+
+  const toggleMode = () => {
+    if (mode === "light") {
+      setMode("dark");
+      document.body.style.backgroundColor = "#212529";
+    } else {
+      setMode("light");
+      document.body.style.backgroundColor = "white";
+    }
+  };
+  
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar mode={mode} toggleMode={toggleMode}/>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={ <><Slider /> <Users user = {user}/></>} />
         </Routes>
         <Routes>
-          <Route path="/about" element={<><About /> </>} />
+          <Route path="/about" element={<><About mode={mode} toggleMode={toggleMode}/> </>} />
         </Routes>
         <Routes>
           <Route path="/contact" element={<ContactUS /> } />

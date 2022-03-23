@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export default function Navbar() {
+
+export default function Navbar(props) {
   return (
     <>
       <nav
-        className="navbar fixed-top navbar-expand-lg navbar-light bg-light"
+        className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode==="light"?"light":"dark"}`}
         style={{ boxShadow: "10px 10px 10px grey", opacity: "0.85", marginBottom: "30px"}}
       >
         <div className="container-fluid">
@@ -112,12 +113,13 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="form-check form-switch text-dark mx-3">
+          <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'} mx-3`}>
               <input
                 className="form-check-input"
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckDefault"
+                onClick={props.toggleMode}
               />
               <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
                     Enable dark mode

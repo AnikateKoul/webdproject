@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ContactUS() {
+export default function ContactUS(props) {
+
+
   return (
     <>
       <div style={{ height: "75px" }}>
         <div className="container my-5 py-5 z-depth-1">
-          <section className="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
-            <h3 className="font-weight-bold">Contact Us</h3>
-
-            <p className="text-muted">
+          <section className="px-md-5 mx-md-5 text-center text-lg-left">
+            <h3 className={`font-weight-bold text-${props.mode==='light'?'danger':'light'}`}>Contact Us</h3>
+            <p className={`text-${props.mode==="light"?"dark":"light"}`}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
               sapiente molestiae <br />
               numquam quas, voluptates omnis nulla ea odio quia similique
