@@ -7,12 +7,12 @@ export default function LoginForm() {
   return (
     <>  
         <div style={{ height: "75px" }}></div>
-        <section className="gradient-custom">
+        <section>
   <div className="container py-5 h-100">
     <div className="row d-flex justify-content-center align-items-center h-100">
       <div className="col-12 col-md-8 col-lg-6 col-xl-5">
         <div className="card bg-light text-dark" style={{borderRadius: "1rem"}}>
-          <div className="card-body p-5 text-center" style={{background: "white", borderRadius: "15px"}}>
+          <div className="card-body p-5 text-center" style={{background: "rgb(240,240,240)", borderRadius: "15px"}}>
 
             <div className="mb-md-5 mt-md-4 pb-5">
 
@@ -28,9 +28,6 @@ export default function LoginForm() {
                 <input type="password" id="typePasswordX" className="form-control form-control-lg" />
                 <label className="form-label" for="typePasswordX">Password</label>
               </div>
-
-              <p className="small mb-5 pb-lg-2"><a className="text-dark-50" href="#!">Forgot password?</a></p>
-
               <button className="btn btn-success btn-block btn-lg gradient-custom-4 text-body" id="loginbtn" type="submit">Login</button>
             </div>
 

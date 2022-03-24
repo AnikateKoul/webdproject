@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { IconName } from "react-icons/io5";
 
-export default function Footer() {
+export default function Footer(props) {
+  // let myStyle = {
+  //   color : props.mode==='dark'?'white':'#212529',
+  //   backgroundColor: props.mode==='dark'?'#212529':'white',
+  // }
   return (
     <>
       <footer
-        className="text-center text-lg-start bg-light text-muted"
+        className={`text-center text-lg-start bg-${props.mode==='light'?'light':'dark'} text-${props.mode==='light'?'dark':'light'}`}
         style={{ position: "relative", top: "250px" }}
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">

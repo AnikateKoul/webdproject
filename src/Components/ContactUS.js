@@ -9,7 +9,7 @@ export default function ContactUS(props) {
       <div style={{ height: "75px" }}>
         <div className="container my-5 py-5 z-depth-1">
           <section className="px-md-5 mx-md-5 text-center text-lg-left">
-            <h3 className={`font-weight-bold text-${props.mode==='light'?'danger':'light'}`}>Contact Us</h3>
+            <h3 className={`font-weight-bold text-${props.mode==='light'?'dark':'light'}`}>Contact Us</h3>
             <p className={`text-${props.mode==="light"?"dark":"light"}`}>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
               sapiente molestiae <br />
@@ -20,10 +20,10 @@ export default function ContactUS(props) {
             <hr className="my-5" />
 
             <div className="row">
-              <div className="col-lg-5 col-md-12 mb-0 mb-md-0">
+              <div className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${props.mode==='light'?'dark':'light'}`}>
                 <h4 className="font-weight-bold">Call or email</h4>
 
-                <p className="text-muted mb-4">
+                <p className="mb-4">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
                   quam sapiente molestiae.
                 </p>
@@ -69,8 +69,9 @@ export default function ContactUS(props) {
                         type="text"
                         id="form-first-name"
                         className="form-control"
+                        placeholder="First Name"
                       />
-                      <label htmlFor="form-first-name">First name</label>
+                      <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-first-name">First name</label>
                     </div>
                   </div>
 
@@ -80,8 +81,9 @@ export default function ContactUS(props) {
                         type="text"
                         id="form-last-name"
                         className="form-control"
+                        placeholder="Last Name"
                       />
-                      <label htmlFor="form-last-name">Last name</label>
+                      <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-last-name">Last name</label>
                     </div>
                   </div>
                 </div>
@@ -91,8 +93,9 @@ export default function ContactUS(props) {
                     type="text"
                     id="form-company"
                     className="form-control"
+                    placeholder="Company Name"
                   />
-                  <label htmlFor="form-company">Company name</label>
+                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-company">Company name</label>
                 </div>
 
                 <div className="md-form md-outline mt-3">
@@ -100,8 +103,9 @@ export default function ContactUS(props) {
                     type="email"
                     id="form-email"
                     className="form-control"
+                    placeholder="name@example.com"
                   />
-                  <label htmlFor="form-email">E-mail</label>
+                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-email">E-mail</label>
                 </div>
 
                 <div className="md-form md-outline mt-3">
@@ -109,27 +113,19 @@ export default function ContactUS(props) {
                     type="number"
                     id="form-number"
                     className="form-control"
+                    placeholder="Phone Number"
                   />
-                  <label htmlFor="form-number">Phone</label>
+                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-number">Phone</label>
                 </div>
-
-                <select
-                  className="browser-default custom-select"
-                  style={{color: "#757575bd"}}
-                >
-                  <option selected>Select department</option>
-                  <option value="1">Support</option>
-                  <option value="2">Sales</option>
-                  <option value="3">General</option>
-                </select>
 
                 <div className="md-form md-outline">
                   <input
                     type="text"
                     id="form-subject"
                     className="form-control"
+                    placeholder="Subject"
                   />
-                  <label htmlFor="form-subject">Subject</label>
+                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-subject">Subject</label>
                 </div>
 
                 <div className="md-form md-outline mb-3">
@@ -137,8 +133,9 @@ export default function ContactUS(props) {
                     id="form-message"
                     className="md-textarea form-control"
                     rows="3"
+                    placeholder="How can we help?"
                   ></textarea>
-                  <label htmlFor="form-message">How we can help?</label>
+                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-message">How we can help?</label>
                 </div>
 
                 <Link to="/thank" ><button type="submit" className="btn btn-info btn-sm ml-0">
