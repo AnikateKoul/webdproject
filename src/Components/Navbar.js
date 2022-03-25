@@ -45,29 +45,29 @@ export default function Navbar(props) {
                 >
                   Destinations
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className={`dropdown-menu bg-${props.mode==="light"?"light":"dark"} text-${props.mode==="light"?"dark":"light"}`} aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item text-decoration-none" to="/place1">
+                    <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place1">
                       Place1
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/place2">
+                    <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place2">
                       Place2
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/place3">
+                    <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place3">
                       Place3
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/place4">
+                    <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place4">
                       Place4
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/place5">
+                    <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place5">
                       Place5
                     </Link>
                   </li>

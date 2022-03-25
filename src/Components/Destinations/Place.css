@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  background-size: cover;
+}
+.main img {
+  width: 100%;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: #667;
+}
+.cards {
+  display: flex;
+  margin-top: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 80vw;
+  display: flex;
+  flex-direction: row-reverse;
+  border: none;
+}
+.image {
+  align-items: center;
+  width: 50%;
+  padding: 5%;
+}
+.image img {
+  width: 100%;
+  border-radius: 2%;
+  opacity: 0.7;
+}
+.text {
+  width: 50%;
+  padding: 5%;
+}
+.text h1 {
+  padding: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.text p {
+  text-align: center;
+  word-spacing: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .cards{
+    margin-top:10vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .card:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .card:nth-child(even) {
+    flex-direction: row;
+  }
+}

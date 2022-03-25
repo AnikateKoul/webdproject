@@ -118,7 +118,7 @@ export default function ContactUS(props) {
                   <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-number">Phone</label>
                 </div>
 
-                <div className="md-form md-outline">
+                <div className="md-form md-outline my-3">
                   <input
                     type="text"
                     id="form-subject"
@@ -138,7 +138,7 @@ export default function ContactUS(props) {
                   <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-message">How we can help?</label>
                 </div>
 
-                <Link to="/thank" ><button type="submit" className="btn btn-info btn-sm ml-0">
+                <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0`}>
                   Submit<i className="far fa-paper-plane ml-2"></i>
                 </button></Link>
               </div>
