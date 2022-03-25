@@ -61,81 +61,83 @@ export default function ContactUS(props) {
                 </p>
               </div>
 
-              <div className="col-lg-7 col-md-12 mb-4 mb-md-0">
+              <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="md-form md-outline mb-0">
+                    <div className="md-form md-outline mb-0 form-floating">
                       <input
                         type="text"
                         id="form-first-name"
                         className="form-control"
                         placeholder="First Name"
                       />
-                      <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-first-name">First name</label>
+                      <label htmlFor="form-first-name">First name</label>
                     </div>
                   </div>
 
                   <div className="col-md-6">
-                    <div className="md-form md-outline mb-0">
+                    <div className="md-form md-outline mb-0 form-floating">
                       <input
                         type="text"
                         id="form-last-name"
                         className="form-control"
                         placeholder="Last Name"
                       />
-                      <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-last-name">Last name</label>
+                      <label htmlFor="form-last-name">Last name</label>
                     </div>
                   </div>
                 </div>
 
-                <div className="md-form md-outline mt-3">
+                <div className="md-form md-outline mt-3 form-floating">
                   <input
                     type="text"
                     id="form-company"
                     className="form-control"
                     placeholder="Company Name"
                   />
-                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-company">Company name</label>
+                  <label htmlFor="form-company">Company name</label>
                 </div>
 
-                <div className="md-form md-outline mt-3">
+                <div className="md-form md-outline mt-3 form-floating">
                   <input
                     type="email"
                     id="form-email"
                     className="form-control"
                     placeholder="name@example.com"
                   />
-                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-email">E-mail</label>
+                  <label htmlFor="form-email">E-mail</label>
                 </div>
 
-                <div className="md-form md-outline mt-3">
+                <div className="md-form md-outline mt-3 form-floating">
                   <input
-                    type="number"
+                    type="text"
                     id="form-number"
                     className="form-control"
                     placeholder="Phone Number"
+                    minLength={10}
+                    maxLength={10}
                   />
-                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-number">Phone</label>
+                  <label htmlFor="form-number">Phone</label>
                 </div>
 
-                <div className="md-form md-outline my-3">
+                <div className="md-form md-outline my-3 form-floating">
                   <input
                     type="text"
                     id="form-subject"
                     className="form-control"
                     placeholder="Subject"
                   />
-                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-subject">Subject</label>
+                  <label htmlFor="form-subject">Subject</label>
                 </div>
 
-                <div className="md-form md-outline mb-3">
+                <div className="md-form md-outline mb-3 form-floating">
                   <textarea
                     id="form-message"
                     className="md-textarea form-control"
                     rows="3"
                     placeholder="How can we help?"
                   ></textarea>
-                  <label className={`text-${props.mode==='light'?'dark':'light'}`} htmlFor="form-message">How we can help?</label>
+                  <label htmlFor="form-message">How we can help?</label>
                 </div>
 
                 <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0`}>

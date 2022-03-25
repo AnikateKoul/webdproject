@@ -10,8 +10,10 @@ export default function Footer(props) {
   return (
     <>
       <footer
-        className={`text-center text-lg-start bg-${props.mode==='light'?'light':'dark'} text-${props.mode==='light'?'dark':'light'}`}
-        style={{ position: "relative", top: "250px" }}
+        className={`text-center text-lg-start bg-${
+          props.mode === "light" ? "light" : "dark"
+        } text-${props.mode === "light" ? "dark" : "light"}`}
+        style={{ position: "relative", top: "250px", zIndex: "-1" }}
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div className="me-5 d-none d-lg-block ">
@@ -59,49 +61,30 @@ export default function Footer(props) {
               </div>
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                <h6 className="text-uppercase fw-bold mb-4">Destinations</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Angular
+                    Place1
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    React
+                    Place2
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Vue
+                    Place3
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div>
-
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pricing
+                    Place4
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Help
+                    Place5
                   </a>
                 </p>
               </div>
@@ -130,9 +113,9 @@ export default function Footer(props) {
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
         >
-          © 2021 Copyright:
-          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          © 2022 Copyright:
+          <a className="text-reset fw-bold" href="#">
+            Title
           </a>
         </div>
       </footer>

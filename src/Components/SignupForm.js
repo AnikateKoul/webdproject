@@ -29,14 +29,14 @@ export default function SignupForm() {
                           <input placeholder="Name" type="text" {...register("name", { required: true, minLength: 3, maxLength: 10 })} />
                           <label>Your Name</label>
                         </Form.Field>
-                        {errors.name && <p>Name length should be between 3 and 10</p>}
+                        {errors.name && <p className="errorTag">Name length should be between 3 and 10</p>}
                         <Form.Field>
                           <input placeholder="Email" type="email" {...register("email", { 
                             required: true,  
                             pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
                         })} />
                           <label>Email</label>
-                          {errors.email && <p>Please check your email address</p>}
+                          {errors.email && <p className="errorTag">Please check your email address</p>}
                         </Form.Field>
                         <Form.Field>
                           <input placeholder="Password" type="password"  {...register("password", { 
@@ -46,7 +46,7 @@ export default function SignupForm() {
                         })}/>
                           <label>Password</label>
                         </Form.Field>
-                        {errors.password && <p>Password length should be between 6 and 15</p>}
+                        {errors.password && <p className="errorTag">Password length should be between 6 and 15</p>}
                         <Button type="submit" className="gradient-custom-4">Submit</Button>
                       </Form>
                     </div>

@@ -23,22 +23,6 @@ function App() {
 
   const [mode, setMode] = useState("light");
 
-  const [ user, setUser] = useState([]);
-
-  const fetchData = () => {
-    fetch("https://randomuser.me/api?nat=us&results=20&page=1")
-    .then((res) => {
-      return res.json();
-    }).then((data) => {
-      let datas = data.results
-      setUser(datas);
-      console.log(datas);
-    })
-  }
-  useEffect(() => {
-    fetchData();
-  }, []);
-
 
   const toggleMode = () => {
     if (mode === "light") {
@@ -56,7 +40,7 @@ function App() {
         <Navbar mode={mode} toggleMode={toggleMode}/>
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={ <><Slider /> <Users user = {user}/></>} />
+          <Route path="/" element={ <><Slider mode={mode}/> <Users /></>} />
         </Routes>
         <Routes>
           <Route path="/about" element={<><About mode={mode} toggleMode={toggleMode}/> </>} />

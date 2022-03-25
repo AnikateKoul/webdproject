@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from "react-router-dom";
-export default function Slider() {
+export default function Slider(props) {
   return (
     <div style={{marginTop: "70px"}}>
-        <Carousel fade="true" width="400px">
+        <Carousel fade="true" width="400px" variant={props.mode}>
   <Carousel.Item interval={1000}>
     <Link to="/place1"><img
       className="d-block w-100"

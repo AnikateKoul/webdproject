@@ -11,3 +11,8 @@
     rgba(143, 211, 244, 1)
   );
 }
+
+.errorTag {
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+}
