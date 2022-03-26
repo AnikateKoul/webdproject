@@ -1,62 +1,43 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./SignupForm.css";
-import { Form, Button } from "semantic-ui-react";
-import { useForm } from "react-hook-form";
+import { useState } from 'react';
 
 export default function SignupForm() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-  }
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-  return (
-    <>
-      <div>
-        <div style={{ height: "120px" }}></div>
-        <section>
-          <div className="mask d-flex align-items-center h-100">
-            <div className="container h-100">
-              <div className="row d-flex justify-content-center align-items-center h-100">
-                <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-                  <div className="card" style={{ borderRadius: "15px", background: "rgb(240,240,240)" }}>
-                    <div className="card-body p-5">
-                      <h2 className="text-uppercase text-center mb-5">
-                        Create an account
-                      </h2>
-                      <Form onSubmit={handleSubmit(onSubmit)}>
-                        <Form.Field>
-                          <input placeholder="Name" type="text" {...register("name", { required: true, minLength: 3, maxLength: 10 })} />
-                          <label>Your Name</label>
-                        </Form.Field>
-                        {errors.name && <p className="errorTag">Name length should be between 3 and 10</p>}
-                        <Form.Field>
-                          <input placeholder="Email" type="email" {...register("email", { 
-                            required: true,  
-                            pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
-                        })} />
-                          <label>Email</label>
-                          {errors.email && <p className="errorTag">Please check your email address</p>}
-                        </Form.Field>
-                        <Form.Field>
-                          <input placeholder="Password" type="password"  {...register("password", { 
-                            required: true, 
-                            minLength: 6,
-                            maxLength: 15
-                        })}/>
-                          <label>Password</label>
-                        </Form.Field>
-                        {errors.password && <p className="errorTag">Password length should be between 6 and 15</p>}
-                        <Button type="submit" className="gradient-custom-4">Submit</Button>
-                      </Form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </>
-  );
+    const handleOnSubmit = async (e) => {
+        e.preventDefault();
+        let result = await fetch(
+        'http://localhost:5000/register', {
+            method: "post",
+            body: JSON.stringify({ name, email, password }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        result = await result.json();
+        console.warn(result);
+        if (result) {
+            alert("Data saved successfully");
+            setEmail("");
+            setName("");
+            setPassword("");
+        }
+    }
+    return (
+        <>
+            <h1>This is React WebApp </h1>
+            <form action="">
+                <input type="text" placeholder="name" 
+                value={name} onChange={(e) => setName(e.target.value)} />
+                <input type="email" placeholder="email" 
+                value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="password" placeholder="password" 
+                value={password} onChange={(e) => setPassword(e.target.value)} />
+                <button type="submit" 
+                onClick={handleOnSubmit}>submit</button>
+            </form>
+
+        </>
+    );
 }
