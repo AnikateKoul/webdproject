@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 // import { IconName } from "react-icons/io5";
 
 export default function Footer(props) {
-  // let myStyle = {
-  //   color : props.mode==='dark'?'white':'#212529',
-  //   backgroundColor: props.mode==='dark'?'#212529':'white',
-  // }
   return (
     <>
       <footer
@@ -32,7 +28,7 @@ export default function Footer(props) {
                 <a
                   href="https://www.instagram.com/iiitlucknow/?hl=en"
                   target="_blank"
-                >
+                >  
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a>
 
@@ -63,36 +59,36 @@ export default function Footer(props) {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Destinations</h6>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Place1
-                  </a>
+                  <Link to="/place1" className="text-reset">
+                    Shimla
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Place2
-                  </a>
+                  <Link to="/place2" className="text-reset">
+                    Goa
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Place3
-                  </a>
+                  <Link to="/place3" className="text-reset">
+                    Ooty
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Place4
-                  </a>
+                  <Link to="/place4" className="text-reset">
+                    Ladakh
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Place5
-                  </a>
+                  <Link to="/place5" className="text-reset">
+                    Jaisalmer
+                  </Link>
                 </p>
               </div>
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i className="fas fa-home me-3"></i> New York, NY 10012, US
+                  <i className="fas fa-home me-3"></i> Lucknow, UP 50012, India
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3"></i>

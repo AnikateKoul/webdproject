@@ -48,27 +48,27 @@ export default function Navbar(props) {
                 <ul className={`dropdown-menu bg-${props.mode==="light"?"light":"dark"} text-${props.mode==="light"?"dark":"light"}`} aria-labelledby="navbarDropdown">
                   <li>
                     <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place1">
-                      Place1
+                      Shimla
                     </Link>
                   </li>
                   <li>
                     <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place2">
-                      Place2
+                      Goa
                     </Link>
                   </li>
                   <li>
                     <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place3">
-                      Place3
+                      Ooty
                     </Link>
                   </li>
                   <li>
                     <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place4">
-                      Place4
+                      Ladakh
                     </Link>
                   </li>
                   <li>
                     <Link className={`dropdown-item text-${props.mode==="light"?"dark":"light"}`} to="/place5">
-                      Place5
+                      Jaisalmer
                     </Link>
                   </li>
                 </ul>
