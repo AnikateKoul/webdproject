@@ -51,9 +51,9 @@ function App() {
         <Routes>
           <Route path="/thank" element={<Thanks mode={mode} toggleMode={toggleMode}/>} />
         </Routes>
-        <Routes>
+        {/* <Routes>
           <Route path="/login" element={<LoginForm />} />
-        </Routes>
+        </Routes> */}
         <Routes>
           <Route path="/signup" element={ <SignupForm/> } />
         </Routes>

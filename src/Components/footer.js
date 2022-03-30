@@ -111,7 +111,7 @@ export default function Footer(props) {
         >
           © 2022 Copyright:
           <a className="text-reset fw-bold" href="#">
-            Title
+            Wanderlusters
           </a>
         </div>
       </footer>

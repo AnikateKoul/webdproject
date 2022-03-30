@@ -10,7 +10,7 @@ export default function Navbar(props) {
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Title
+            Wanderlusters
           </Link>
           <button
             className="navbar-toggler"
@@ -89,23 +89,12 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
-            {/* <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> */}
             <ul className="nav navbar-nav ml-auto">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/login">
                 <button className="btn btn-success ">Login</button>
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/signup">
                   <button className="btn btn-primary mx-2">Sign Up</button>
