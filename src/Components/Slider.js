@@ -8,56 +8,56 @@ export default function Slider(props) {
   <Carousel.Item interval={1000}>
     <Link to="/place1"><img
       className="d-block w-100"
-      src="https://imageio.forbes.com/specials-images/dam/imageserve/1139828965/960x0.jpg?fit=bounds&format=jpg&width=720"
+      src="https://images.unsplash.com/photo-1641933002719-4c878c83f48e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="First slide"
     /></Link>
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Shimla</h3>
+      <p>Live with no excuses and travel with no regrets.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
   <Link to="/place2"><img
       className="d-block w-100"
-      src="https://imageio.forbes.com/specials-images/dam/imageserve/1171238184/960x0.jpg?fit=bounds&format=jpg&width=720"
+      src="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
       alt="Second slide"
     /></Link>
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Goa</h3>
+      <p>We travel not to escape life but for life not to escape us.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
   <Link to="/place3"><img
       className="d-block w-100"
-      src="https://imageio.forbes.com/specials-images/dam/imageserve/1166259909/960x0.jpg?fit=bounds&format=jpg&width=720"
+      src="https://images.unsplash.com/photo-1572238916064-69673fdc419f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1238&q=80"
       alt="Third slide"
     /></Link>
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Ooty</h3>
+      <p>Life is either a daring adventure or nothing at all.</p>
     </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
     <Link to="/place4"><img
       className="d-block w-100"
-      src="https://imageio.forbes.com/specials-images/dam/imageserve/1166259909/960x0.jpg?fit=bounds&format=jpg&width=720"
+      src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="Third slide"
     /></Link>
     <Carousel.Caption>
-      <h3>Fourth slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Ladakh</h3>
+      <p>Traveling – it leaves you speechless, then turns you into a storyteller.</p>
     </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
     <Link to="/place5"><img
       className="d-block w-100"
-      src="https://imageio.forbes.com/specials-images/dam/imageserve/1166259909/960x0.jpg?fit=bounds&format=jpg&width=720"
+      src="https://images.unsplash.com/photo-1577089907583-991f1ba4a03c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="Third slide"
     /></Link>
     <Carousel.Caption>
-      <h3>Fifth slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Jaisalmer</h3>
+      <p>Stop worrying about the potholes in the road and enjoy the journey</p>
     </Carousel.Caption>
   </Carousel.Item>
   </Carousel>
