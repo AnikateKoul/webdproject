@@ -5,12 +5,12 @@
   font-family: "Lato", sans-serif;
 }
 
-.main {
+.main1 {
   position: relative;
   width: 100vw;
   background-size: cover;
 }
-.main img {
+.main1 img {
   width: 100%;
 }
 .bottom-left {

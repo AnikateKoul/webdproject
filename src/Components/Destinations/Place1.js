@@ -5,7 +5,7 @@ export default function Place1() {
   return (
     <>
       <div style={{ marginTop: "70px" }}></div>
-      <div className="main">
+      <div className="main1">
         <img
           src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
           alt=""
