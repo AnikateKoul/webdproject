@@ -6,6 +6,7 @@ import Slider from "./Components/Slider";
 import Footer from "./Components/footer";
 import Thanks from "./Components/Thanks";
 import LoginForm from "./Components/LoginForm";
+import Gallery from "./Components/Gallery";
 import ContactUS from "./Components/ContactUS";
 import SignupForm from "./Components/SignupForm";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -56,6 +57,9 @@ function App() {
         </Routes> */}
         <Routes>
           <Route path="/signup" element={ <SignupForm/> } />
+        </Routes>
+        <Routes>
+          <Route path="/Gallery" element={ <Gallery/> } />
         </Routes>
         <Routes>
           <Route path="/place1" element={ <Place1 /> } />
