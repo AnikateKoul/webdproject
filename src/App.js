@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Slider from "./Components/Slider";
-import Footer from "./Components/Footer";
+import Footer from "./Components/footer";
 import Thanks from "./Components/Thanks";
 import LoginForm from "./Components/LoginForm";
 import ContactUS from "./Components/ContactUS";

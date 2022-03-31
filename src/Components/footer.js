@@ -33,8 +33,8 @@ export default function Footer(props) {
                 </a>
 
                 <div className="mx-5">
-                  <a href="https://twitter.com/iiit_lucknow" target="_blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                <a href="https://twitter.com/iiit_lucknow" target="_blank">  <ion-icon name="logo-twitter">
+                </ion-icon>
                   </a>
                 </div>
               </div>
