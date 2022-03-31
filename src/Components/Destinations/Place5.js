@@ -5,11 +5,12 @@ export default function Place5() {
   return (
     <>
       <div style={{ marginTop: "70px" }}></div>
-      <div className="main">
+      <div className="main1">
         <img
           src="https://images.unsplash.com/photo-1600871215197-c68059ada01a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80"
           alt=""
         />
+        <div class="bottom-left">Jaisalmer</div>
       </div>
       <div className="cards">
         <div className="card ">
@@ -20,7 +21,7 @@ export default function Place5() {
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Jaisalmer</h1>
             <p className="">Sub Heading-1</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
@@ -46,7 +47,7 @@ export default function Place5() {
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Jaisalmer</h1>
             <p className="">Sub Heading-2</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
