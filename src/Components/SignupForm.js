@@ -36,16 +36,16 @@ export default function SignupForm() {
             </div>
             <form action="">
                 <h3>Login Here </h3>
-                <label for="username" >Name</label>
+                <label className='SUlabel' for="username" >Name</label>
                 <input type="text" placeholder="Name" id='username'
                 value={name} onChange={(e) => setName(e.target.value)} />
-                <label for="email" required>Email</label>
+                <label className='SUlabel' for="email" required>Email</label>
                 <input type="email" placeholder="Email" id='email'
                 value={email} onChange={(e) => setEmail(e.target.value)} />
-                <label for="address" required>Address</label>
+                <label className='SUlabel' for="address" required>Address</label>
                 <input type="text" placeholder="Address" id='address'
                 value={address} onChange={(e) => setAddress(e.target.value)} />
-                <label for="contact" required>Contact No.</label>
+                <label className='SUlabel' for="contact" required>Contact No.</label>
                 <input type="text" placeholder="Contact No." id='contactno'
                 value={contactno} onChange={(e) => setContactNo(e.target.value)} />
                 <button type="submit" id='sub'

@@ -9,7 +9,7 @@ export default function Footer(props) {
         className={`text-center fixed-bottom text-lg-start bg-${
           props.mode === "light" ? "light" : "dark"
         } text-${props.mode === "light" ? "dark" : "light"}`}
-        style={{ position: "relative", top: "250px", zIndex: "-1" }}
+        style={{ position: "relative", top: "0px", zIndex: "-1" }}
       >
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div className="me-5 d-none d-lg-block ">
