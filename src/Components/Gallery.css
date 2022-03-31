@@ -57,6 +57,7 @@ img{
     width: 50%;
     position: relative; 
     margin-bottom: -4px;
+    background-color: black;
 }
 
 .card img:hover{
