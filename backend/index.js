@@ -3,12 +3,12 @@ const mongoose = require("mongoose");
 mongoose.connect(
   "mongodb://localhost:27017/",
   {
-    dbName: "yourDB-name",
+    dbName: "wlDatabase",
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
   (err) =>
-    err ? console.log(err) : console.log("Connected to yourDB-name database")
+    err ? console.log(err) : console.log("Connected to wlDatabase database")
 );
 
 // Schema for users of app
@@ -37,17 +37,6 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-const UserSchema2 = new mongoose.Schema({
-  email2: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password2: {
-    type: String,
-    required: true,
-  },
-});
 
 const User2 = mongoose.model("users2", UserSchema2);
 
@@ -88,16 +77,5 @@ app.post("/register", async (req, resp) => {
   }
 });
 
-app.post("/signin", async (req, resp) => {
-  const email2 = User.find({ email: User2.email2 });
-  console.log(req.body.email2);
-//   const orgPwd = email2.password;
 
-//   let pwd = req.body.password2;
-//   if (pwd === orgPwd) {
-//     alert("Password matched");
-//   } else {
-//     alert("Try again");
-//   }
-});
 app.listen(5000);
