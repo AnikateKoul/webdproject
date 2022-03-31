@@ -7,13 +7,13 @@
 body{
     background-color: rgba(1,1,1,1);
 }
-.main{
+.main3{
     width: 100vw;
     position: relative;
     display: flex;
     justify-content: center;
 }
-.main-text{
+.main3-text{
     position: absolute;
     color: white;
     top: 30%;
@@ -23,7 +23,7 @@ body{
     letter-spacing: 3px;
     text-align: center;
 }
-.main-text p{
+.main3-text p{
     overflow: hidden;
     border-right: .12em solid silver;
     white-space: nowrap;
@@ -85,7 +85,7 @@ img{
     .col{
         width: 100%;
     }
-    .main-text{
+    .main3-text{
         font-size: 1.3rem;
     }
     .row:hover .card:not(:hover) {
