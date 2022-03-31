@@ -51,7 +51,6 @@ export default function ContactUS(props) {
                         type="text"
                         id="form-first-name"
                         className="form-control"
-                        placeholder="First Name"
                       />
                       <label htmlFor="form-first-name">First name</label>
                     </div>
@@ -63,7 +62,6 @@ export default function ContactUS(props) {
                         type="text"
                         id="form-last-name"
                         className="form-control"
-                        placeholder="Last Name"
                       />
                       <label htmlFor="form-last-name">Last name</label>
                     </div>
@@ -75,7 +73,6 @@ export default function ContactUS(props) {
                     type="text"
                     id="form-company"
                     className="form-control"
-                    placeholder="Company Name"
                   />
                   <label htmlFor="form-company">Company name</label>
                 </div>
@@ -85,7 +82,6 @@ export default function ContactUS(props) {
                     type="email"
                     id="form-email"
                     className="form-control"
-                    placeholder="name@example.com"
                   />
                   <label htmlFor="form-email">E-mail</label>
                 </div>
@@ -95,7 +91,6 @@ export default function ContactUS(props) {
                     type="text"
                     id="form-number"
                     className="form-control"
-                    placeholder="Phone Number"
                     minLength={10}
                     maxLength={10}
                   />
@@ -107,7 +102,6 @@ export default function ContactUS(props) {
                     type="text"
                     id="form-subject"
                     className="form-control"
-                    placeholder="Subject"
                   />
                   <label htmlFor="form-subject">Subject</label>
                 </div>
@@ -117,7 +111,6 @@ export default function ContactUS(props) {
                     id="form-message"
                     className="md-textarea form-control"
                     rows="3"
-                    placeholder="How can we help?"
                   ></textarea>
                   <label htmlFor="form-message">How we can help?</label>
                 </div>
