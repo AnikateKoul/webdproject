@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContactUs.css";
 import { Link } from "react-router-dom";
 
 export default function ContactUS(props) {
@@ -6,15 +7,13 @@ export default function ContactUS(props) {
 
   return (
     <>
+    <div className="main2">
       <div style={{ height: "75px" }}>
         <div className="container my-5 py-5 z-depth-1">
           <section className="px-md-5 mx-md-5 text-center text-lg-left">
-            <h3 className={`font-weight-bold text-${props.mode==='light'?'dark':'light'}`}>Contact Us</h3>
-            <p className={`text-${props.mode==="light"?"dark":"light"}`}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam
-              sapiente molestiae <br />
-              numquam quas, voluptates omnis nulla ea odio quia similique
-              corrupti magnam, doloremque laborum.
+            <h1 className={`font-weight-bold text-${props.mode==='light'?'dark':'light'} heading`}>Contact Us</h1>
+            <p className={`text-${props.mode==="light"?"dark":"light"} sub-heading`}>
+              We'd love to hear from you.
             </p>
 
             <hr className="my-5" />
@@ -140,7 +139,7 @@ export default function ContactUS(props) {
                   <label htmlFor="form-message">How we can help?</label>
                 </div>
 
-                <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0`}>
+                <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0 my-10 contactButton`}>
                   Submit<i className="far fa-paper-plane ml-2"></i>
                 </button></Link>
               </div>
@@ -149,6 +148,7 @@ export default function ContactUS(props) {
         </div>
       </div>
       <div style={{height: "500px"}}></div>
+      </div>
     </>
   );
 }
