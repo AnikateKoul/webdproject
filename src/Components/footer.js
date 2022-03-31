@@ -6,7 +6,7 @@ export default function Footer(props) {
   return (
     <>
       <footer
-        className={`text-center text-lg-start bg-${
+        className={`text-center fixed-bottom text-lg-start bg-${
           props.mode === "light" ? "light" : "dark"
         } text-${props.mode === "light" ? "dark" : "light"}`}
         style={{ position: "relative", top: "250px", zIndex: "-1" }}

@@ -29,6 +29,7 @@ export default function SignupForm() {
     }
     return (
         <>
+            <div className="main">
             <div className="background">
               <div className="shape"></div>
               <div className="shape"></div>
@@ -36,10 +37,10 @@ export default function SignupForm() {
             <form action="">
                 <h3>Login Here </h3>
                 <label for="username" >Name</label>
-                <input type="text" placeholder="name" id='username'
+                <input type="text" placeholder="Name" id='username'
                 value={name} onChange={(e) => setName(e.target.value)} />
                 <label for="email" required>Email</label>
-                <input type="email" placeholder="email" id='email'
+                <input type="email" placeholder="Email" id='email'
                 value={email} onChange={(e) => setEmail(e.target.value)} />
                 <label for="address" required>Address</label>
                 <input type="text" placeholder="Address" id='address'
@@ -50,7 +51,7 @@ export default function SignupForm() {
                 <button type="submit" id='sub'
                 onClick={handleOnSubmit}>Sign Up</button>
             </form>
-
+            </div>
         </>
     );
 }
