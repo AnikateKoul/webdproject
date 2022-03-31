@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: rgba(1,1,1,1);
+}
+.main{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main-text{
+    position: absolute;
+    color: white;
+    top: 30%;
+    font-size: 3rem;
+    color: silver;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.main-text p{
+    overflow: hidden;
+    border-right: .12em solid silver;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: silver; }
+  }
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+.col{
+    width: 50%;
+    display: flex;
+}
+.card{
+    width: 50%;
+    position: relative; 
+    margin-bottom: -4px;
+}
+
+.card img:hover{
+    z-index: 1;
+    transform: skew(-15deg,-7.5deg) scale(1.15) ;
+}
+.card:hover{
+    z-index: 1;
+}
+.row:hover .card:not(:hover) {
+    filter: blur(10px);
+}
+
+.text{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 5%;
+    color: silver;
+}
+
+@media screen and (max-width: 1024px){
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .main-text{
+        font-size: 1.3rem;
+    }
+    .row:hover .card:not(:hover) {
+    filter: blur(0px);
+    }
+}
