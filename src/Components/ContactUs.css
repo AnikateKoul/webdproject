@@ -23,7 +23,7 @@
     z-index: inherit;
     border-radius: 2%;
 }
-.containerTemp input,textarea{
+.containerTemp input{
     box-sizing: border-box;
     width: 100%;
     font-size: 1.2rem;
@@ -33,6 +33,17 @@
     opacity: 0.4;
     color: white;
     outline: none;
+}
+.containerTemp textarea{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2rem;
+    border: 2px solid rgba(136,136,136,0.8);
+    background: none;
+    background-color: #cbd5e1;
+    opacity: 0.4;
+    color: white;
+    outline: none;   
 }
 
 .containerTemp label{
@@ -94,7 +105,7 @@
      background-image: url(https://images.unsplash.com/photo-1550614806-51d8db524675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbiUyMGNhbGxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
  }
  .main2{
-     height: fit-content;
+     height: 150vh;
  }
 
 }
