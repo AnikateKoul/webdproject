@@ -5,11 +5,12 @@ export default function Place3() {
   return (
     <>
       <div style={{ marginTop: "70px" }}></div>
-      <div className="main">
+      <div className="main1">
         <img
-          src="https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b290eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          src="https://images.unsplash.com/photo-1597165253287-d06597132da6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt=""
         />
+        <div class="bottom-left">Ooty</div>
       </div>
       <div className="cards">
         <div className="card ">
@@ -20,7 +21,7 @@ export default function Place3() {
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Ooty</h1>
             <p className="">Sub Heading-1</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
@@ -46,7 +47,7 @@ export default function Place3() {
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Ooty</h1>
             <p className="">Sub Heading-2</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a

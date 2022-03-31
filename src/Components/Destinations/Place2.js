@@ -5,22 +5,23 @@ export default function Place2() {
   return (
     <>
       <div style={{ marginTop: "70px" }}></div>
-      <div className="main">
+      <div className="main1">
         <img
-          src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          src="https://images.unsplash.com/photo-1424112908919-49d7a3e04482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
           alt=""
         />
+        <div class="bottom-left">Goa</div>
       </div>
       <div className="cards">
         <div className="card ">
           <div className="image ">
             <img
-              src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
+              src="https://images.unsplash.com/photo-1586076920412-f37073ff5e1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               alt=""
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Goa</h1>
             <p className="">Sub Heading-1</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
@@ -41,12 +42,12 @@ export default function Place2() {
         <div className="card ">
           <div className="image ">
             <img
-              src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
+              src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               alt=""
             />
           </div>
           <div className="text">
-            <h1 className="">Shimla</h1>
+            <h1 className="">Goa</h1>
             <p className="">Sub Heading-2</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
@@ -67,7 +68,7 @@ export default function Place2() {
         <div className="card ">
           <div className="image ">
             <img
-              src="https://images.unsplash.com/photo-1583143874828-de3d288be51a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzc29vcmllJTJDJTIwaW5kaWF8ZW58MHx8MHx8&w=1000&q=80"
+              src="https://images.unsplash.com/photo-1429279905410-894d3980828b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
             />
           </div>
