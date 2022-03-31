@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Trade+Winds&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+.container{
+    margin-bottom: 15px;
+}
+
+.title{
+    font-family: "Trade Winds", cursive;
+}
+
+#gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px ;
+}
+
+#giffy{
+    width: 1337px;
+    height: 634px;
+    opacity: 0.8;
+}

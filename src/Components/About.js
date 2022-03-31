@@ -1,19 +1,31 @@
-import React ,{useState} from "react";
+import React, { useState } from "react";
+import "./About.css";
 
 export default function About(props) {
-
   let myStyle = {
-    color : props.mode==='dark'?'white':'#212529',
-    backgroundColor: props.mode==='dark'?'#212529':'white',
-  }
+    color: props.mode === "dark" ? "white" : "#212529",
+    backgroundColor: props.mode === "dark" ? "#212529" : "white",
+  };
 
   return (
-    <div className="container" style={{ paddingTop: "90px"}}>
-      <div className="accordion accordion-flush" id="accordionFlushExample" style={myStyle}>
+    <div className="container" style={{ paddingTop: "90px" }}>
+      <div id="gif">
+        {" "}
+        <img
+          src="https://media0.giphy.com/media/k8aQj7ocnGObrJLsja/giphy.gif?cid=ecf05e47wr7n7b4bfawuxguqbn5izpj5louqg6u47w59duck&rid=giphy.gif&ct=g"
+          alt="..."
+          id="giffy"
+        />
+      </div>
+      <div
+        className="accordion accordion-flush"
+        id="accordionFlushExample"
+        style={myStyle}
+      >
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed title title"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
@@ -31,17 +43,24 @@ export default function About(props) {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              Our team of creative and driven entrepreneurs come together to
-              build a hotel search that is fast, intuitive and unbiased, with
-              the longstanding mission… To be the traveler's first and
-              independent source of information for finding the ideal hotel.
+              Our Mission is to perform and deliver excellent quality service to
+              our clients. Providing them unforgettable travel, enjoyable, with
+              guaranteed services that exceed their expectations With this
+              objective, we aim to earn the reputation as "Your Preferred Travel
+              Agency". Our team of creative and driven entrepreneurs come
+              together to build a hotel search that is fast, intuitive and
+              unbiased, with the longstanding mission… To be the traveler's
+              first and independent source of information for finding the ideal
+              hotel. The satisfaction of our customers and extraordinary service
+              is the main aim, saving your time and money while providing the
+              best value for your trip.
             </div>
           </div>
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingTwo">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed title"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
@@ -59,18 +78,32 @@ export default function About(props) {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              We want to enable all our advertisers, from independent hoteliers
-              to the largest hotel chains, to grow their businesses by accessing
-              our broad audience of monthly users. We also want to enable our
-              users to search for best hotels without wasting any of their
-              precious time.
+              To become the leading travel operator in India, by relying on a
+              well-motivated workforce, applying appropriate technology, and
+              providing maximum satisfaction to the customer. This vision is
+              progressively being achieved by the following:
+              <ul> <li>An increased focus
+              on improved profitability </li>
+              <li>Enhancing employee motivation and
+              loyalty to the company</li> 
+              <li> Implementing cutting-edge reservation and
+              marketing tools available in the industry. </li>
+              <li>Seeking out-of-the-box
+              strategies in distinguishing ourselves from the competition in
+              order to get the most customer satisfaction possible.</li></ul>
+               We want to
+              enable all our advertisers, from independent hoteliers to the
+              largest hotel chains, to grow their businesses by accessing our
+              broad audience of monthly users. We also want to enable our users
+              to search for best hotels without wasting any of their precious
+              time. 
             </div>
           </div>
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingThree">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed title"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
@@ -78,13 +111,76 @@ export default function About(props) {
               aria-controls="flush-collapseThree"
               style={myStyle}
             >
-              Our Modus Operandi
+              Our Values
             </button>
           </h2>
           <div
             id="flush-collapseThree"
-            className="accordion-collapse collapse"
+            className="accordion-collapse collapse title"
             aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body" style={myStyle}>
+              <ul>
+                <li>
+                  <b>Solve it together </b>
+                  <br />
+                  &nbsp; Collaboration connects us. There’s no problem so tough
+                  that we can’t tackle it together. Working as a team, we
+                  harness the wisdom (and energy!) of the crowd.
+                </li>
+                <br />
+                <li>
+                  <b>Act with purpose </b>
+                  <br />
+                  &nbsp; We embrace change and foster innovation. Our creativity
+                  and drive are positively contagious – and they get results.
+                </li>
+                <br />
+                <li>
+                  <b>Do what’s right </b>
+                  <br />
+                  &nbsp; We operate openly and foster transparency. Our team
+                  members, clients and communities always know where we stand.
+                </li>
+                <br />
+                <li>
+                  <b>Feed the future </b>
+                  <br />
+                  &nbsp; When we give others the tools, skills and opportunities
+                  to succeed, they flourish. When we give ourselves the same,
+                  we’re unstoppable.
+                </li>
+                <br />
+                <li>
+                  <b>Give your best </b>
+                  <br />
+                  &nbsp; Passion powers us. We believe the only way to do great
+                  work is to love what you do. We’re inspired by the people and
+                  places around us.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingFour">
+            <button
+              className="accordion-button collapsed title"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+              style={myStyle}
+            >
+              Our Modus Operandi
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            className="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
@@ -99,27 +195,28 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingFour">
+          <h2 className="accordion-header" id="flush-headingFive">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button collapsed title"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour"
+              data-bs-target="#flush-collapseFive"
               aria-expanded="false"
-              aria-controls="flush-collapseFour"
+              aria-controls="flush-collapseFive"
               style={myStyle}
             >
               Our Team
             </button>
           </h2>
           <div
-            id="flush-collapseFour"
+            id="flush-collapseFive"
             className="accordion-collapse collapse"
-            aria-labelledby="flush-headingFour"
+            aria-labelledby="flush-headingFive"
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              We are a group of hardworking and talented individuals who aspire to make this world a better place
+              We are a group of hardworking and talented individuals who aspire
+              to make this world a better place
               <h4>People : </h4>
               <ul>
                 <li>Achal Gupta</li>
