@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
+.gallery{
+    background-color: black;
+}
 .main3{
     width: 100vw;
     position: relative;
@@ -66,8 +69,6 @@ img{
 }
 .galleryRow:hover .galleryCard:not(:hover) {
     filter: blur(10px);
-    border: none;
-    box-shadow: none;
 }
 
 .galleryText{
@@ -80,7 +81,7 @@ img{
 
 @media screen and (max-width: 1024px){
     .galleryRow{
-        flex-direction: galleryColumn;
+        flex-direction: Column;
     }
     .galleryCol{
         width: 100%;
