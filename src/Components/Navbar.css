@@ -9,4 +9,8 @@
     margin-left: 80vw;
     margin-top: -3vh;
   }
+
+  #navBut,button:not(:disabled){
+     width:30vw;
+  }
 }

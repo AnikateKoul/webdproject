@@ -46,6 +46,10 @@
     outline: none;   
 }
 
+.colorChange,.form-floating>.form-control:not(:placeholder-shown){
+    color: black;
+}
+
 .containerTemp label{
     color: white;
 }

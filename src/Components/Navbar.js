@@ -98,7 +98,7 @@ export default function Navbar(props) {
               </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/signup">
-                  <button className="btn btn-primary mx-2">Sign Up</button>
+                  <button className="btn btn-primary mx-2" id='navBut'>Sign Up</button>
                 </Link>
               </li>
             </ul>

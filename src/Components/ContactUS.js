@@ -50,7 +50,7 @@ export default function ContactUS(props) {
                       <input
                         type="text"
                         id="form-first-name"
-                        className="form-control"
+                        className="form-control colorChange"
                       />
                       <label htmlFor="form-first-name">First name</label>
                     </div>
@@ -61,7 +61,7 @@ export default function ContactUS(props) {
                       <input
                         type="text"
                         id="form-last-name"
-                        className="form-control"
+                        className="form-control colorChange"
                       />
                       <label htmlFor="form-last-name">Last name</label>
                     </div>
@@ -72,7 +72,7 @@ export default function ContactUS(props) {
                   <input
                     type="text"
                     id="form-company"
-                    className="form-control"
+                    className="form-control colorChange"
                   />
                   <label htmlFor="form-company">Company name</label>
                 </div>
@@ -81,7 +81,7 @@ export default function ContactUS(props) {
                   <input
                     type="email"
                     id="form-email"
-                    className="form-control"
+                    className="form-control colorChange"
                   />
                   <label htmlFor="form-email">E-mail</label>
                 </div>
@@ -90,7 +90,7 @@ export default function ContactUS(props) {
                   <input
                     type="text"
                     id="form-number"
-                    className="form-control"
+                    className="form-control colorChange"
                     minLength={10}
                     maxLength={10}
                   />
@@ -101,7 +101,7 @@ export default function ContactUS(props) {
                   <input
                     type="text"
                     id="form-subject"
-                    className="form-control"
+                    className="form-control colorChange"
                   />
                   <label htmlFor="form-subject">Subject</label>
                 </div>
@@ -109,7 +109,7 @@ export default function ContactUS(props) {
                 <div className="md-form md-outline mb-3 form-floating">
                   <textarea
                     id="form-message"
-                    className="md-textarea form-control"
+                    className="md-textarea form-control colorChange"
                     rows="3"
                   ></textarea>
                   <label htmlFor="form-message">How we can help?</label>
