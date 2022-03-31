@@ -1,6 +1,10 @@
 import React from "react";
 import "./ContactUs.css";
 import { Link } from "react-router-dom";
+import {BsFillTelephoneFill} from "react-icons/bs";
+import {FaMailBulk} from "react-icons/fa";
+import {FaAddressCard} from "react-icons/fa";
+import {FaEnvelope} from "react-icons/fa";
 
 export default function ContactUS(props) {
 
@@ -9,7 +13,7 @@ export default function ContactUS(props) {
     <>
     <div className="main2">
       <div style={{ height: "75px" }}>
-        <div className="container my-5 py-5 z-depth-1">
+        <div className="container my-5 py-5 z-depth-1 containerTemp">
           <section className="px-md-5 mx-md-5 text-center text-lg-left">
             <h1 className={`font-weight-bold text-${props.mode==='light'?'dark':'light'} heading`}>Contact Us</h1>
             <p className={`text-${props.mode==="light"?"dark":"light"} sub-heading`}>
@@ -19,48 +23,26 @@ export default function ContactUS(props) {
             <hr className="my-5" />
 
             <div className="row">
-              <div className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${props.mode==='light'?'dark':'light'}`}>
-                <h4 className="font-weight-bold">Call or email</h4>
+              <div className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${props.mode==='light'?'dark':'light'} leftDiv`}>
+              <div className="innerLeftDiv">
+                <h1 className="font-weight-bold leftDivHeading">Contact Information</h1>
 
-                <p className="mb-4">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                  quam sapiente molestiae.
+                <p className="mb-4 sub-heading2">
+                  <i>
+                  Fill up the form and our team will get back to you within 24 hours.</i>
                 </p>
-
-                <p className="font-weight-bold">Support:</p>
-
-                <p className="mb-2">+ 800 123 456</p>
-
-                <p className="mb-2">
-                  <a href="/">Contact support</a>
-                </p>
-
-                <p className="mb-4">
-                  Our technical support is available by phone or email from 11am
-                  to 11pm.
-                </p>
-
-                <p className="font-weight-bold">Sales:</p>
-
-                <p className="mb-2">+ 900 123 456</p>
-
-                <p className="mb-2">
-                  <a href="/">Contact sales</a>
-                </p>
-
-                <p className="mb-4">
-                  Our sales team is available by phone or email from 11am to
-                  11pm.
-                </p>
-
-                <p className="font-weight-bold">General inquiries:</p>
-
-                <p className="mb-2">
-                  <a href="/">info@mycompany.com</a>
-                </p>
+                <div className="phone">
+                <p><BsFillTelephoneFill /> +800 123 456</p>
+                </div>
+                <div className="email">
+                <p><FaEnvelope/> wanderlust@gmail.com</p>
+                </div>
+                <div className="address">
+                <p><FaAddressCard/> 221B, Baker Street</p>
+                </div>
               </div>
-
-              <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating">
+              </div>
+              <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating rightDiv">
                 <div className="row">
                   <div className="col-md-6">
                     <div className="md-form md-outline mb-0 form-floating">
@@ -75,7 +57,7 @@ export default function ContactUS(props) {
                   </div>
 
                   <div className="col-md-6">
-                    <div className="md-form md-outline mb-0 form-floating">
+                    <div className="md-form md-outline mb-0 form-floating lastName">
                       <input
                         type="text"
                         id="form-last-name"

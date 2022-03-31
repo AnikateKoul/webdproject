@@ -1,15 +1,19 @@
 *{
     box-sizing: border-box;
+    word-spacing: 5px;
+    letter-spacing: 3px;
 }
+
 .main2{
-    background-image: url(https://images.unsplash.com/photo-1648638470609-53f69e74e610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1648638470609-53f69e74e610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+    background-image: url(https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin-bottom: 0;
 }
-.container{
+.containerTemp{
     margin-top: 10vh;
     box-sizing: border-box;
     backdrop-filter: blur(10px);
@@ -19,7 +23,7 @@
     z-index: inherit;
     border-radius: 2%;
 }
-.container input,textarea{
+.containerTemp input,textarea{
     box-sizing: border-box;
     width: 100%;
     font-size: 1.2rem;
@@ -31,7 +35,7 @@
     outline: none;
 }
 
-.container label{
+.containerTemp label{
     color: white;
 }
 .heading{
@@ -39,6 +43,13 @@
     word-spacing: 5px;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+.leftDivHeading{
+    margin: 5% auto;
+    color: white;
+}
+.sub-heading2{
+    color: white;
 }
 .sub-heading{
     font-size: 1.2rem;
@@ -54,4 +65,36 @@
 .contactButton:hover{
     background-color: #1d4ed8;
     color: white;
+}
+.phone, .email, .address{
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    margin: 5% 5% 5% auto;
+    padding: 0px 5%;
+}
+
+.leftDiv{
+    background-image: url(https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1648638470609-53f69e74e610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+    padding: 0;
+}
+.innerLeftDiv{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100%;  
+    border-radius: 2%; 
+}
+@media screen and (max-width: 800px){
+ .leftDiv{
+     background-image: url(https://images.unsplash.com/photo-1550614806-51d8db524675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbiUyMGNhbGxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+ }
+ .main2{
+     height: fit-content;
+ }
+
 }
