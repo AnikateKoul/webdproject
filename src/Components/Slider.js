@@ -30,7 +30,7 @@ export default function Slider(props) {
   <Carousel.Item interval={1000}>
   <Link to="/place3"><img
       className="d-block w-100"
-      src="https://images.unsplash.com/photo-1572238916064-69673fdc419f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1238&q=80"
+      src="https://images.unsplash.com/photo-1500614922032-b6dd337b1313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="Third slide"
     /></Link>
     <Carousel.Caption>
@@ -41,7 +41,7 @@ export default function Slider(props) {
     <Carousel.Item interval={1000}>
     <Link to="/place4"><img
       className="d-block w-100"
-      src="https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      src="https://images.unsplash.com/photo-1593118845043-359e5f628214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="Third slide"
     /></Link>
     <Carousel.Caption>
