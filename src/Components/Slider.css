@@ -8,6 +8,9 @@
     background-image: url(https://images.unsplash.com/photo-1475869568365-7b6051b1e030?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1108&q=80);
     background-position: center;
     background-size: cover;
+    margin-bottom: 0;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
 }
 .reviews{
     backdrop-filter: blur(10px);
@@ -31,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
     color: white;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive !important;
 }
 .profile{
     width: 15vw;

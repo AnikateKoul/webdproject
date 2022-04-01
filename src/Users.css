@@ -1,0 +1,36 @@
+.checking{
+    display: inline-block;
+}
+thead tr th,td{
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: red;
+    border-collapse: collapse;
+}
+thead tr th:first-child{
+    border-left: 0;
+}
+thead tr{
+    border-bottom: 2px solid white;   
+}
+.lastRow{
+    border-bottom: 2px solid white;     
+}
+table{
+    color: white;
+}
+/* @media screen and (min-width: 1024px){
+.ourTable{
+    max-width: 60vw;
+}
+} */
+.weatherReport{
+    background-image: url(https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.weatherReport h2{
+    padding: 3% 0;
+    color: white !important;
+}
