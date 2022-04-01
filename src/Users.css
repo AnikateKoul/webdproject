@@ -1,0 +1,7 @@
+@media screen and (max-width: 990px) {
+  #weatherRpt {
+    width: 65vw;
+    height: 8vh;
+    margin-left: 19vw;
+  }
+}

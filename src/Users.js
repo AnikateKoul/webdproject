@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
+import './Users.css';
 
 export default function Users(props) {
   const [user, setUser] = useState([]);
@@ -59,7 +59,7 @@ export default function Users(props) {
         <label htmlFor="form-subject">City Name</label>
       </div>
 
-      <button type="submit" class="btn btn-primary mb-2" onClick={HandleClick}>
+      <button type="submit" class="btn btn-primary mb-2" id='weatherRpt' onClick={HandleClick}>
         See Weather Report
       </button>
       <table class="table">
