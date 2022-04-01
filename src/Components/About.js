@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
+import MyVideo from "./MyVideo.mp4";
 
 export default function About(props) {
   let myStyle = {
@@ -8,14 +9,20 @@ export default function About(props) {
   };
 
   return (
-    <div className="container" style={{ paddingTop: "90px" }}>
-      <div id="gif">
+    <div className="container" style={{ paddingTop: "70px" }}>
+      {/* <div id="gif">
         {" "}
         <img
           src="https://media0.giphy.com/media/k8aQj7ocnGObrJLsja/giphy.gif?cid=ecf05e47wr7n7b4bfawuxguqbn5izpj5louqg6u47w59duck&rid=giphy.gif&ct=g"
           alt="..."
           id="giffy"
         />
+      </div> */}
+      <div id="gif">
+        <video width="100%" height="100%" autoPlay muted loop id="giffy">
+          <source src={MyVideo} type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
       </div>
       <div
         className="accordion accordion-flush"
@@ -82,21 +89,28 @@ export default function About(props) {
               well-motivated workforce, applying appropriate technology, and
               providing maximum satisfaction to the customer. This vision is
               progressively being achieved by the following:
-              <ul> <li>An increased focus
-              on improved profitability </li>
-              <li>Enhancing employee motivation and
-              loyalty to the company</li> 
-              <li> Implementing cutting-edge reservation and
-              marketing tools available in the industry. </li>
-              <li>Seeking out-of-the-box
-              strategies in distinguishing ourselves from the competition in
-              order to get the most customer satisfaction possible.</li></ul>
-               We want to
-              enable all our advertisers, from independent hoteliers to the
-              largest hotel chains, to grow their businesses by accessing our
-              broad audience of monthly users. We also want to enable our users
-              to search for best hotels without wasting any of their precious
-              time. 
+              <ul>
+                {" "}
+                <li>An increased focus on improved profitability </li>
+                <li>
+                  Enhancing employee motivation and loyalty to the company
+                </li>
+                <li>
+                  {" "}
+                  Implementing cutting-edge reservation and marketing tools
+                  available in the industry.{" "}
+                </li>
+                <li>
+                  Seeking out-of-the-box strategies in distinguishing ourselves
+                  from the competition in order to get the most customer
+                  satisfaction possible.
+                </li>
+              </ul>
+              We want to enable all our advertisers, from independent hoteliers
+              to the largest hotel chains, to grow their businesses by accessing
+              our broad audience of monthly users. We also want to enable our
+              users to search for best hotels without wasting any of their
+              precious time.
             </div>
           </div>
         </div>
@@ -225,6 +239,7 @@ export default function About(props) {
                 <li>Sahil Singh</li>
                 <li>Vikrant Kumar</li>
                 <li>Dhruv Sangra</li>
+                <li>Kundan Pratap Singh</li>
               </ul>
             </div>
           </div>
