@@ -45,7 +45,7 @@ export default function ContactUS(props) {
               </div>
               <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating rightDiv">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6 name1">
                     <div className="md-form md-outline mb-0 form-floating">
                       <input
                         type="text"
