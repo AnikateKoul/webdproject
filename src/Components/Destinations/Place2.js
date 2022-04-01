@@ -1,7 +1,7 @@
 import React from "react";
 import "./Place.css";
 
-export default function Place2() {
+export default function Place2(props) {
   return (
     <>
       <div style={{ marginTop: "70px" }}></div>
@@ -13,16 +13,15 @@ export default function Place2() {
         <div class="bottom-left">Goa</div>
       </div>
       <div className="cards">
-        <div className="card ">
+        <div className={`card bg-${props.mode==='light'?'light':'dark'}`}>
           <div className="image ">
             <img
               src="https://images.unsplash.com/photo-1586076920412-f37073ff5e1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               alt=""
             />
           </div>
-          <div className="text">
+          <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
             <h1 className="">Goa</h1>
-            <p className="">Sub Heading-1</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
               dolorem repellendus eius, pariatur facere rerum perspiciatis ex
@@ -39,16 +38,15 @@ export default function Place2() {
             </p>
           </div>
         </div>
-        <div className="card ">
+        <div className={`card bg-${props.mode==='light'?'light':'dark'}`}>
           <div className="image ">
             <img
               src="https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               alt=""
             />
           </div>
-          <div className="text">
+          <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
             <h1 className="">Goa</h1>
-            <p className="">Sub Heading-2</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
               dolorem repellendus eius, pariatur facere rerum perspiciatis ex
@@ -65,16 +63,15 @@ export default function Place2() {
             </p>
           </div>
         </div>
-        <div className="card ">
+        <div className={`card bg-${props.mode==='light'?'light':'dark'}`}>
           <div className="image ">
             <img
               src="https://images.unsplash.com/photo-1429279905410-894d3980828b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
             />
           </div>
-          <div className="text">
+          <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
             <h1 className="">Masoori</h1>
-            <p className="">Sub Heading-3</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
               dolorem repellendus eius, pariatur facere rerum perspiciatis ex

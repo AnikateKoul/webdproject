@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-export default function Users() {
+
+export default function Users(props) {
   const [user, setUser] = useState([]);
   const options = {
     method: "GET",
@@ -44,7 +45,7 @@ export default function Users() {
 
   return (
     <>
-    <h3>
+    <h3 className={`text-${props.mode==='light'?'dark':'light'}`}>
       Check the weather report of your favourite city here
     </h3>
       <div className="md-form md-outline my-3 form-floating">
@@ -64,19 +65,19 @@ export default function Users() {
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">City name</th>
-            <th scope="col">Temperature</th>
-            <th scope="col">Feels Like Temperature</th>
-            <th scope="col">Humidity</th>
+            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">City name</th>
+            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Temperature</th>
+            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Feels Like</th>
+            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Humidity</th>
           </tr>
         </thead>
         <tbody>
           {user.error ? (
-            <td colSpan={4} align="center">
+            <td className={`text-${props.mode==='light'?'dark':'light'}`} colSpan={4} align="center">
               No such place exists
             </td>
           ) : (
-            <tr>
+            <tr className={`text-${props.mode==='light'?'dark':'light'}`}>
               <th scope="row">{document.getElementById("textBox")?document.getElementById("textBox").value:"1"}</th>
               <td>{user.temp}</td>
               <td>{user.feels_like}</td>

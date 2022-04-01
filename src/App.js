@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Slider from "./Components/Slider";
-import Footer from "./Components/footer";
+import Footer from "./Components/Footer";
 import Thanks from "./Components/Thanks";
 import LoginForm from "./Components/LoginForm";
 import Gallery from "./Components/Gallery";
@@ -41,7 +41,7 @@ function App() {
         <Navbar mode={mode} toggleMode={toggleMode}/>
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={ <><Slider mode={mode}/> <Users /></>} />
+          <Route path="/" element={ <><Slider mode={mode}/> <Users mode={mode} toggleMode={toggleMode}/></>} />
         </Routes>
         <Routes>
           <Route path="/about" element={<><About mode={mode} toggleMode={toggleMode}/> </>} />
@@ -62,19 +62,19 @@ function App() {
           <Route path="/Gallery" element={ <Gallery/> } />
         </Routes>
         <Routes>
-          <Route path="/place1" element={ <Place1 /> } />
+          <Route path="/place1" element={ <Place1 mode={mode} toggleMode={toggleMode}/> } />
         </Routes>
         <Routes>
-          <Route path="/place2" element={ <Place2/> } />
+          <Route path="/place2" element={ <Place2 mode={mode} toggleMode={toggleMode}/> } />
         </Routes>
         <Routes>
-          <Route path="/place3" element={ <Place3/> } />
+          <Route path="/place3" element={ <Place3 mode={mode} toggleMode={toggleMode}/> } />
         </Routes>
         <Routes>
-          <Route path="/place4" element={ <Place4/> } />
+          <Route path="/place4" element={ <Place4 mode={mode} toggleMode={toggleMode}/> } />
         </Routes>
         <Routes>
-          <Route path="/place5" element={ <Place5/> } />
+          <Route path="/place5" element={ <Place5 mode={mode} toggleMode={toggleMode}/> } />
         </Routes>
         </ScrollToTop>
         <Footer mode={mode} toggleMode={toggleMode}/>

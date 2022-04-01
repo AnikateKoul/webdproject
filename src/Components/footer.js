@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 export default function Footer(props) {
   return (
     <>
+    <div class="d-flex flex-column min-vh-100">
       <footer
-        className={`text-center fixed-bottom text-lg-start bg-${
+        className={`text-center fixed-bottom text-lg-start mt-auto bg-${
           props.mode === "light" ? "light" : "dark"
         } text-${props.mode === "light" ? "dark" : "light"}`}
         style={{ position: "relative", top: "0px", zIndex: "-1" }}
@@ -110,11 +111,12 @@ export default function Footer(props) {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
         >
           © 2022 Copyright:
-          <a className="text-reset fw-bold" href="#">
+          <Link className="text-reset fw-bold" to="/">
             Wanderlusters
-          </a>
+          </Link>
         </div>
       </footer>
+      </div>
     </>
   );
 }
