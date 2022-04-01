@@ -116,7 +116,7 @@ export default function ContactUS(props) {
                 </div>
 
                 <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0 my-10 contactButton`}>
-                  Submit<i className="far fa-paper-plane ml-2"></i>
+                  Submit
                 </button></Link>
               </div>
             </div>
