@@ -22,7 +22,7 @@
 }
 .cards {
   display: flex;
-  margin-top: 20vh;
+  margin: 20vh 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;

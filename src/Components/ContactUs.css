@@ -6,7 +6,6 @@
 }
 
 .main2{
-    /* background-image: url(https://images.unsplash.com/photo-1648638470609-53f69e74e610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
     background-image: url(https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,6 +102,17 @@
     -webkit-backdrop-filter: blur(10px);
     height: 100%;  
     border-radius: 2%; 
+}
+@media screen and (max-width: 1024px){
+    .main2{
+        min-height: 150vh;
+    }
+    .phone, .email, .address{
+       font-size: 1.1rem;
+   }
+   .heading{
+       font-size: 2.5rem;
+   }
 }
 @media screen and (max-width: 800px){
  .main2{

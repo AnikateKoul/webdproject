@@ -4,7 +4,7 @@ import "./Place.css";
 export default function Place1(props) {
   return (
     <>
-      <div style={{ marginTop: "70px" }}></div>
+      <div style={{ marginTop: "70px"}}></div>
       <div className="main1">
         <img
           src="https://images.unsplash.com/photo-1489933504786-389c51eb1b7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
