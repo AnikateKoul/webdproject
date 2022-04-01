@@ -7,7 +7,7 @@ export default function Navbar(props) {
     <>
       <nav
         className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode==="light"?"light":"dark"}`}
-        style={{ boxShadow: "0px 0px 10px grey", opacity: "0.85", marginBottom: "30px"}}
+        style={{ boxShadow: "0px 0px 10px grey", opacity: "0.95", marginBottom: "30px"}}
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
