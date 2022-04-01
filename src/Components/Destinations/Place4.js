@@ -23,18 +23,7 @@ export default function Place4(props) {
           <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
             <h1 className="">Ladakh</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
-              dolorem repellendus eius, pariatur facere rerum perspiciatis ex
-              tenetur sit harum veniam, ad quos nobis sunt iste iusto velit
-              mollitia nemo cupiditate nisi, possimus quaerat. Harum, ipsa?
-              Blanditiis, maiores ipsa voluptates nisi doloribus est modi vero
-              fugiat tenetur soluta fugit amet excepturi voluptatum nostrum
-              molestias repudiandae dicta illum sit dignissimos. Commodi
-              mollitia repellendus veniam dignissimos molestias nemo, eaque
-              perspiciatis quod amet cupiditate repudiandae officiis assumenda,
-              minima velit! Recusandae quaerat sapiente, sed et sequi nam ea
-              reprehenderit impedit quas quod, adipisci architecto voluptas.
-              Praesentium beatae sit, error dolorum at sint. Similique!
+            Going on a holiday to a charming land like Ladakh is surely an experience of a lifetime. So, why would you want to miss out on anything best there? With the world's two mightiest mountain ranges- the Himalayas & the Karakoram, 3 highest motorable raods- Chang La, Khardung La, & Tanglang La, desert mountains, gorgeous night skies, rainbows, Tibetan monasteries, flowers, lakes, rainbow hills, & the most stunning landscapes, Ladakh is bound to be one of the most epic journeys you can take in India.
             </p>
           </div>
         </div>
@@ -48,18 +37,7 @@ export default function Place4(props) {
           <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
             <h1 className="">Ladakh</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
-              dolorem repellendus eius, pariatur facere rerum perspiciatis ex
-              tenetur sit harum veniam, ad quos nobis sunt iste iusto velit
-              mollitia nemo cupiditate nisi, possimus quaerat. Harum, ipsa?
-              Blanditiis, maiores ipsa voluptates nisi doloribus est modi vero
-              fugiat tenetur soluta fugit amet excepturi voluptatum nostrum
-              molestias repudiandae dicta illum sit dignissimos. Commodi
-              mollitia repellendus veniam dignissimos molestias nemo, eaque
-              perspiciatis quod amet cupiditate repudiandae officiis assumenda,
-              minima velit! Recusandae quaerat sapiente, sed et sequi nam ea
-              reprehenderit impedit quas quod, adipisci architecto voluptas.
-              Praesentium beatae sit, error dolorum at sint. Similique!
+            The town offers a good variety of the Tibetan cuisine, so that's a must try. Head to The Tibetan Kitchen & the Lamayuru Restaurant for delicacies like Thukpa, Shabakley, Momos, & more. Try the Yak Cheese, a local delicacy which is rare & delicious. Monasteries, rivers, valleys, lakes, villages and museums – this place is a confluence of so many popular and awesome things. Here’s a list of the top places in Leh Ladakh for a fantastic vacation. Most of the tourist attractions are now open in Ladakh and some of the best places to visit in Ladakh are Khardung-la Pass, Nubra Valley, Magnetic Hill, and Royal Leh Palace.
             </p>
           </div>
         </div>
@@ -71,20 +49,9 @@ export default function Place4(props) {
             />
           </div>
           <div className={`text text-${props.mode==='light'?'dark':'light'}`}>
-            <h1 className="">Masoori</h1>
+            <h1 className="">Ladakh</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
-              dolorem repellendus eius, pariatur facere rerum perspiciatis ex
-              tenetur sit harum veniam, ad quos nobis sunt iste iusto velit
-              mollitia nemo cupiditate nisi, possimus quaerat. Harum, ipsa?
-              Blanditiis, maiores ipsa voluptates nisi doloribus est modi vero
-              fugiat tenetur soluta fugit amet excepturi voluptatum nostrum
-              molestias repudiandae dicta illum sit dignissimos. Commodi
-              mollitia repellendus veniam dignissimos molestias nemo, eaque
-              perspiciatis quod amet cupiditate repudiandae officiis assumenda,
-              minima velit! Recusandae quaerat sapiente, sed et sequi nam ea
-              reprehenderit impedit quas quod, adipisci architecto voluptas.
-              Praesentium beatae sit, error dolorum at sint. Similique!
+            It is advisable to visit Ladakh during the dry season, which is from April to June. You can feel some sunshine and heat during the day. The summer season is the best time to travel here by all ages of people. You can go exploring the glaciers, Indus River, trekking in its mountain pass and valleys. Ladakh is open for domestic travel and travelers can board a flight from all major states in India including Delhi, Kolkata, and Bangalore.
             </p>
           </div>
         </div>
