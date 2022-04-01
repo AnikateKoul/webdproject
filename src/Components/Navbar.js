@@ -11,7 +11,7 @@ export default function Navbar(props) {
       >
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Wanderlusters
+            <img src="./favicon.ico" alt="" style={{height: "45px"}}/>
           </Link>
           <button
             className="navbar-toggler"

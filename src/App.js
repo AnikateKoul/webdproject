@@ -56,7 +56,7 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
         </Routes> */}
         <Routes>
-          <Route path="/signup" element={ <SignupForm/> } />
+          <Route path="/signup" element={ <SignupForm mode={mode} toggleMode={toggleMode} /> } />
         </Routes>
         <Routes>
           <Route path="/Gallery" element={ <Gallery/> } />
