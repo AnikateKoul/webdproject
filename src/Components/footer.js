@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function Footer(props) {
   return (
     <>
-    <div class="d-flex flex-column min-vh-100">
+    <div class="d-flex flex-column ">
       <footer
-        className={`text-center fixed-bottom text-lg-start mt-auto bg-${
+        className={`text-center fixed-bottom text-lg-start  bg-${
           props.mode === "light" ? "light" : "dark"
         } text-${props.mode === "light" ? "dark" : "light"}`}
         style={{ position: "relative", top: "0px", zIndex: "-1" }}
