@@ -18,6 +18,7 @@ export default function About(props) {
           id="giffy"
         />
       </div> */}
+      <div className="aboutUs">
       <div id="gif">
         <video width="100%" height="100%" autoPlay muted loop id="giffy">
           <source src={MyVideo} type="video/mp4" />
@@ -245,6 +246,7 @@ export default function About(props) {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

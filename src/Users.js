@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './Users.css';
+import "./Users.css"
 
 export default function Users(props) {
   const [user, setUser] = useState([]);
@@ -45,10 +45,11 @@ export default function Users(props) {
 
   return (
     <>
-    <h3 className={`text-${props.mode==='light'?'dark':'light'}`}>
-      Check the weather report of your favourite city here
-    </h3>
-      <div className="md-form md-outline my-3 form-floating">
+    <div className="weatherReport">
+    <h2 className={`text-${props.mode==='light'?'dark':'light'}`}>
+      Check the Weather Report of your favourite city here!
+    </h2>
+      <div className="md-form md-outline my-3 form-floating checking">
         <input
           type="text"
           id="textBox"
@@ -57,27 +58,27 @@ export default function Users(props) {
           defaultValue={"Lucknow"}
         />
         <label htmlFor="form-subject">City Name</label>
-      </div>
-
-      <button type="submit" class="btn btn-primary mb-2" id='weatherRpt' onClick={HandleClick}>
+      <button type="submit" class="btn btn-primary mb-2 seeWeather" id="weatherRpt" onClick={HandleClick}>
         See Weather Report
       </button>
-      <table class="table">
+      </div>
+
+      <table class="table text-light ourTable">
         <thead>
-          <tr>
-            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">City name</th>
-            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Temperature</th>
-            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Feels Like</th>
-            <th className={`text-${props.mode==='light'?'dark':'light'}`} scope="col">Humidity</th>
+          <tr className="bg-dark">
+            <th scope="col">City name</th>
+            <th scope="col">Temperature</th>
+            <th scope="col">Feels Like</th>
+            <th scope="col">Humidity</th>
           </tr>
         </thead>
         <tbody>
           {user.error ? (
-            <td className={`text-${props.mode==='light'?'dark':'light'}`} colSpan={4} align="center">
+            <td className={`text-${props.mode==='dark'?'light':'dark'}`} colSpan={4} align="center">
               No such place exists
             </td>
           ) : (
-            <tr className={`text-${props.mode==='light'?'dark':'light'}`}>
+            <tr className={` bg-secondary text-light lastRow`}>
               <th scope="row">{document.getElementById("textBox")?document.getElementById("textBox").value:"1"}</th>
               <td>{user.temp}</td>
               <td>{user.feels_like}</td>
@@ -86,6 +87,7 @@ export default function Users(props) {
           )}
         </tbody>
       </table>
+      </div>
     </>
   );
 }
