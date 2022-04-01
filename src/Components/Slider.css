@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.carouselContent{
+    font-size:2.5em;
+}
+.carouselContent>h3{
+    font-size:2em;
+}
+
 .outerReview{
     background-image: url(https://images.unsplash.com/photo-1475869568365-7b6051b1e030?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1108&q=80);
     background-position: center;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&display=swap");
+@import url('http://fonts.cdnfonts.com/css/bickham-script-pro');
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +18,11 @@
   position: absolute;
   bottom: 10%;
   left: 5%;
-  color: #667;
-  font-size: 6rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Bickham Script Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12rem;
 }
 .cards {
   display: flex;
@@ -70,8 +74,8 @@
   .text {
     width: 100%;
   }
-  .cards{
-    margin-top:10vh;
+  .cards {
+    margin-top: 10vh;
   }
 }
 
@@ -83,9 +87,8 @@
     flex-direction: row;
   }
 }
-@media screen and (max-width: 1024px){
-  .bottom-left{
+@media screen and (max-width: 1024px) {
+  .bottom-left {
     font-size: 3rem;
   }
 }
-
