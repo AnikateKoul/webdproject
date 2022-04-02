@@ -41,7 +41,7 @@ if (lastName) {
 }
 if (email) {
   email.addEventListener("blur", (e) => {
-    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    let regex = /^([_\-.0-9a-zA-Z]+)@([_\-.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
     let value = e.target.value;
     if (regex.test(value)) {
       validEmail = true;
