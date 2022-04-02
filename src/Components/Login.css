@@ -30,9 +30,10 @@
 }
 
 .login-box #loginTxt {
-  margin: 0 0 30px;
+  margin: 0 0 6.8vh;
   padding: 0;
   color: #fff;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -53,11 +54,11 @@
 }
 .login-box .user-box label {
   position: absolute;
-  top: -20px;
+  top: -23px;
   left: 0;
   padding: 10px 0;
   color: #03e9f4;
-  font-size: 1rem;
+  font-size: 1.2rem;
   pointer-events: none;
 } 
 
@@ -66,7 +67,7 @@
   display: inline-block;
   padding: 10px 20px;
   color: #03e9f4;
-  font-size: 16px;
+  font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
