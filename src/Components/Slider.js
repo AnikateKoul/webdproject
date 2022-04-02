@@ -25,8 +25,8 @@ export default function Slider(props) {
       alt="Second slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
-      <h3>Goa</h3>
-      <p>We travel not to escape life but for life not to escape us.</p>
+      <h3 style={{color: "white"}}>Goa</h3>
+      <p style={{color: "white"}}>We travel not to escape life but for life not to escape us.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item interval={1000}>
@@ -36,8 +36,8 @@ export default function Slider(props) {
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
-      <h3>Ooty</h3>
-      <p>Life is either a daring adventure or nothing at all.</p>
+      <h3 style={{color: "black"}}>Ooty</h3>
+      <p style={{color: "black"}}>Life is either a daring adventure or nothing at all.</p>
     </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
@@ -47,8 +47,8 @@ export default function Slider(props) {
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
-      <h3>Ladakh</h3>
-      <p>Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+      <h3 style={{color: "black"}}>Ladakh</h3>
+      <p style={{color: "black"}}>Traveling – it leaves you speechless, then turns you into a storyteller.</p>
     </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>

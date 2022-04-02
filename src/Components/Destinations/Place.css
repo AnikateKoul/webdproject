@@ -61,6 +61,7 @@
 .text p {
   text-align: center;
   word-spacing: 3px;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
