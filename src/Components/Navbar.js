@@ -91,11 +91,11 @@ export default function Navbar(props) {
               </li>
             </ul>
             <ul className="nav navbar-nav ml-auto">
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link" to="/login">
                 <button className="btn btn-success ">Login</button>
                 </Link>
-              </li> */}
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/signup">
                   <button className="btn btn-primary mx-2" id='navBut'>Sign Up</button>
