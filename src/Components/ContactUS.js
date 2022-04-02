@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import "./validation.js";
 import { Link } from "react-router-dom";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import {FaMailBulk} from "react-icons/fa";
@@ -52,6 +53,9 @@ export default function ContactUS(props) {
                         id="form-first-name"
                         className="form-control colorChange"
                       />
+                        <small id="namevalid" class="form-text text-muted invalid-feedback">
+                        Your First Name must be 2-10 characters long and should not start with a number.
+                      </small>
                       <label htmlFor="form-first-name">First name</label>
                     </div>
                   </div>
@@ -63,6 +67,9 @@ export default function ContactUS(props) {
                         id="form-last-name"
                         className="form-control colorChange"
                       />
+                          <small id="namevalid" class="form-text text-muted invalid-feedback">
+                        Your Last Name must be 2-10 characters long and should not start with a number.
+                      </small>
                       <label htmlFor="form-last-name">Last name</label>
                     </div>
                   </div>
@@ -83,6 +90,9 @@ export default function ContactUS(props) {
                     id="form-email"
                     className="form-control colorChange"
                   />
+                  <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                        Your email must be a valid email
+                      </small>
                   <label htmlFor="form-email">E-mail</label>
                 </div>
 
@@ -94,6 +104,9 @@ export default function ContactUS(props) {
                     minLength={10}
                     maxLength={10}
                   />
+                      <small id="phonevalid" class="form-text text-muted invalid-feedback">
+                        Your phone must be a valid 10 digit phone number.
+                      </small>
                   <label htmlFor="form-number">Phone</label>
                 </div>
 
@@ -105,7 +118,9 @@ export default function ContactUS(props) {
                   />
                   <label htmlFor="form-subject">Subject</label>
                 </div>
-
+                <small id="subjectvalid" class="form-text text-muted invalid-feedback">
+                        Please elaborate your issue in a bit more detail.
+                </small>
                 <div className="md-form md-outline mb-3 form-floating">
                   <textarea
                     id="form-message"
@@ -115,9 +130,9 @@ export default function ContactUS(props) {
                   <label htmlFor="form-message">How we can help?</label>
                 </div>
 
-                <Link to="/thank" ><button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0 my-10 contactButton`}>
+                <button type="submit" className={`btn btn-${props.mode==='light'?'info':'light'} ml-0 my-10 contactButton`} id="submit">
                   Submit
-                </button></Link>
+                </button>
               </div>
             </div>
           </section>
