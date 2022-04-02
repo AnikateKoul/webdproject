@@ -123,8 +123,8 @@ export default function ContactUS(props) {
           </section>
         </div>
       </div>
-      <div style={{height: "500px"}}></div>
       </div>
+      <div style={{height: "100px"}}></div>
     </>
   );
 }
