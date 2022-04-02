@@ -9,14 +9,14 @@ export default function SignupForm(props) {
   };
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
+  const [password, setPassword] = useState("");
   const [contactno, setContactNo] = useState("");
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     let result = await fetch("http://localhost:5000/register", {
       method: "post",
-      body: JSON.stringify({ name, email, address, contactno }),
+      body: JSON.stringify({ name, email, password, contactno }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -27,7 +27,7 @@ export default function SignupForm(props) {
       alert("Data saved successfully");
       setName("");
       setEmail("");
-      setAddress("");
+      setPassword("");
       setContactNo("");
     }
   };
@@ -62,16 +62,16 @@ export default function SignupForm(props) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label className="SUlabel" for="address" required style={myStyle}>
-            Address
+          <label className="SUlabel" for="password" required style={myStyle}>
+            Password
           </label>
           <input
-            type="text"
+            type="password"
             style={{ border: "1px solid rgb(173,173,181)", color: "black" }}
-            placeholder="Address" className="sgnInpt"
-            id="address"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
+            placeholder="Password" className="sgnInpt"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <label className="SUlabel" for="contact" required style={myStyle}>
             Contact No.

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
-import "./validation.js";
+// import "./validation.js";
 import { Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
 // import { FaMailBulk } from "react-icons/fa";
@@ -86,7 +86,7 @@ export default function ContactUS(props) {
                           Your First Name must be 2-10 characters long and
                           should not start with a number.
                         </small>
-                        <label htmlFor="form-first-name">First name</label>
+                        <label htmlFor="form-first-name" className='contactLab'>First name</label>
                       </div>
                     </div>
 
@@ -104,7 +104,7 @@ export default function ContactUS(props) {
                           Your Last Name must be 2-10 characters long and should
                           not start with a number.
                         </small>
-                        <label htmlFor="form-last-name">Last name</label>
+                        <label htmlFor="form-last-name" className='contactLab'>Last name</label>
                       </div>
                     </div>
                   </div>
@@ -115,7 +115,7 @@ export default function ContactUS(props) {
                       id="form-company"
                       className="form-control colorChange"
                     />
-                    <label htmlFor="form-company">Company name</label>
+                    <label htmlFor="form-company" className='contactLab'>Company name</label>
                   </div>
 
                   <div className="md-form md-outline mt-3 form-floating">
@@ -130,7 +130,7 @@ export default function ContactUS(props) {
                     >
                       Your email must be a valid email
                     </small>
-                    <label htmlFor="form-email">E-mail</label>
+                    <label htmlFor="form-email" className='contactLab'>E-mail</label>
                   </div>
 
                   <div className="md-form md-outline mt-3 form-floating">
@@ -147,7 +147,7 @@ export default function ContactUS(props) {
                     >
                       Your phone must be a valid 10 digit phone number.
                     </small>
-                    <label htmlFor="form-number">Phone</label>
+                    <label htmlFor="form-number" className='contactLab'>Phone</label>
                   </div>
 
                   <div className="md-form md-outline my-3 form-floating">
@@ -156,7 +156,7 @@ export default function ContactUS(props) {
                       id="form-subject"
                       className="form-control colorChange"
                     />
-                    <label htmlFor="form-subject">Subject</label>
+                    <label htmlFor="form-subject" className='contactLab'>Subject</label>
                   </div>
                   <small
                     id="subjectvalid"
@@ -170,7 +170,7 @@ export default function ContactUS(props) {
                       className="md-textarea form-control colorChange"
                       rows="3"
                     ></textarea>
-                    <label htmlFor="form-message">How we can help?</label>
+                    <label htmlFor="form-message" className='contactLab'>How we can help?</label>
                   </div>
                   {/* <Link to="/thank"> */}
                   <button
