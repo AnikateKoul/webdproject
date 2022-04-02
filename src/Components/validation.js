@@ -1,4 +1,10 @@
 // import Thanks from "./Thanks.js"
+// $('#failure').hide();
+// $('#success').hide();
+let failure=document.getElementById('failure');
+let success=document.getElementById('success');
+success.style.display="none";
+failure.style.display="none";
 let firstName = document.getElementById("form-first-name");
 let lastName = document.getElementById("form-last-name");
 let email = document.getElementById("form-email");
@@ -91,18 +97,30 @@ if (submit) {
     e.preventDefault();
 
     console.log("You clicked on submit");
-    console.log(validEmail, validFirstName, validSecondName, validPhone);
+    console.log(validEmail, validFirstName, validSecondName, validPhone,validIssue);
 
     // Submit your form here
-    if (validEmail && validFirstName && validSecondName && validPhone) {
+    if (validEmail && validFirstName && validSecondName && validPhone && validIssue) {
       console.log("Phone, email and user are valid. Submitting the form");
     //   window.location.replace("http://localhost:3000/thank");
     //   window.open(Thanks.js);
+    failure.style.display="none";
+    success.style.display="block";
+    setTimeout(() => {
+      failure.style.display="none";
+      success.style.display="none";
+    }, 10000);
       
     } else {
       console.log(
         "One of Phone, email or user are not valid. Hence not submitting the form. Please correct the errors and try again"
       );
+      failure.style.display="block";
+      success.style.display="none";
+      setTimeout(() => {
+        failure.style.display="none";
+        success.style.display="none";
+      }, 10000);
     }
   });
 }

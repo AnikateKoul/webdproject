@@ -3,29 +3,34 @@ import "./ContactUs.css";
 import "./validation.js";
 import { Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaMailBulk } from "react-icons/fa";
+// import { FaMailBulk } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function ContactUS(props) {
   return (
     <>
-      <div style={{ marginTop: "70px" }}></div>
+      <div style={{ marginTop: "105px" }}></div>
       <div className="main2">
         <div style={{ height: "75px" }}>
+        <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> Your query has been successfully submitted!
+         </div>
+          <div id="failure" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> Your query has not been sent due to errors.
+          </div>
+
           <div className="container my-5 py-5 z-depth-1 containerTemp">
             <section className="px-md-5 mx-md-5 text-center text-lg-left">
               <h1
-                className={`font-weight-bold text-${
-                  props.mode === "light" ? "dark" : "light"
-                } heading`}
+                className={`font-weight-bold text-${props.mode === "light" ? "dark" : "light"
+                  } heading`}
               >
                 Contact Us
               </h1>
               <p
-                className={`text-${
-                  props.mode === "light" ? "dark" : "light"
-                } sub-heading`}
+                className={`text-${props.mode === "light" ? "dark" : "light"
+                  } sub-heading`}
               >
                 We'd love to hear from you.
               </p>
@@ -34,9 +39,8 @@ export default function ContactUS(props) {
 
               <div className="row">
                 <div
-                  className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${
-                    props.mode === "light" ? "dark" : "light"
-                  } leftDiv`}
+                  className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${props.mode === "light" ? "dark" : "light"
+                    } leftDiv`}
                 >
                   <div className="innerLeftDiv">
                     <h1 className="font-weight-bold leftDivHeading">
@@ -171,9 +175,8 @@ export default function ContactUS(props) {
                   {/* <Link to="/thank"> */}
                   <button
                     type="submit"
-                    className={`btn btn-${
-                      props.mode === "light" ? "info" : "light"
-                    } ml-0 my-10 contactButton`}
+                    className={`btn btn-${props.mode === "light" ? "info" : "light"
+                      } ml-0 my-10 contactButton`}
                     id="submit"
                   >
                     Submit
