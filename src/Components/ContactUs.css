@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     margin-bottom: 0;
 }
 .containerTemp{
@@ -131,3 +131,7 @@
     margin-bottom: 4%;
 }
 }
+small{
+    color: red;
+  }
+  
