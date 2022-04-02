@@ -42,16 +42,16 @@ export default function SignupForm(props) {
             <form action="" style={myStyle}>
                 <h3 style={myStyle}>Login Here </h3>
                 <label className='SUlabel' for="username" style={myStyle}>Name</label>
-                <input type="text" style={{border: '1px solid black',color: 'black'}} placeholder="Name" id='username'
+                <input type="text" style={{border: '1px solid rgb(173,173,181)',color: 'black'}} placeholder="Name" id='username'
                 value={name} onChange={(e) => setName(e.target.value)} />
                 <label className='SUlabel' for="email" required style={myStyle}>Email</label>
-                <input type="email" style={{border: '1px solid black',color: 'black'}} placeholder="Email" id='email'
+                <input type="email" style={{border: '1px solid rgb(173,173,181)',color: 'black'}} placeholder="Email" id='email'
                 value={email} onChange={(e) => setEmail(e.target.value)} />
                 <label className='SUlabel' for="address" required style={myStyle}>Address</label>
-                <input type="text" style={{border: '1px solid black',color: 'black'}} placeholder="Address" id='address'
+                <input type="text" style={{border: '1px solid rgb(173,173,181)',color: 'black'}} placeholder="Address" id='address'
                 value={address} onChange={(e) => setAddress(e.target.value)} />
                 <label className='SUlabel' for="contact" required style={myStyle}>Contact No.</label>
-                <input type="text" style={{border: '1px solid black',color: 'black'}} placeholder="Contact No." id='contactno'
+                <input type="text" style={{border: '1px solid rgb(173,173,181)',color: 'black'}} placeholder="Contact No." id='contactno'
                 value={contactno} onChange={(e) => setContactNo(e.target.value)} />
                 <button type="submit" id='sub'
                 onClick={handleOnSubmit}>Sign Up</button>
@@ -60,3 +60,5 @@ export default function SignupForm(props) {
         </>
     );
 }
+
+// #334
