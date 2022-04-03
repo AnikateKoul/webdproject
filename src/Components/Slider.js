@@ -58,8 +58,8 @@ export default function Slider(props) {
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
-      <h3>Jaisalmer</h3>
-      <p>Stop worrying about the potholes in the road and enjoy the journey</p>
+      <h3 style={{color: "white"}}>Jaisalmer</h3>
+      <p style={{color: "white"}}>Stop worrying about the potholes in the road and enjoy the journey</p>
     </Carousel.Caption>
   </Carousel.Item>
   </Carousel>

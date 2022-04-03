@@ -96,7 +96,9 @@ app.post("/login",async(req,res)=>{
     if (err) console.log("sorry, you'll have to Sign Up first!!!!!!!!!!");
     if (User) {
     console.log("yeah, alright... enter the password now.");
-    if(enteredPassword===(User.password)){console.log("You are now logged in!!!!!!!");}
+    if(enteredPassword===(User.password)){console.log("You are now logged in!!!!!!!");
+      res.send(req.body);
+  }
   }
   }
 );
