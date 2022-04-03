@@ -3,6 +3,14 @@ import { useState, useEffect } from "react";
 import "./Users.css"
 
 export default function Users(props) {
+  let feelsLike=document.getElementById('feelsLike');
+  let temp=feelsLike.innerText;
+  console.log(temp);
+  let weatherReport=document.getElementById('weatherReport');
+  console.log(weatherReport)
+  if(temp<15){
+    weatherReport.style.backgroundImage="url('https://images.unsplash.com/photo-1529017342279-ca5eb1c54bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')";
+  }
   const [user, setUser] = useState([]);
   const options = {
     method: "GET",
@@ -41,11 +49,12 @@ export default function Users(props) {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  }, []
+  );
 
   return (
     <>
-    <div className="weatherReport">
+    <div className="weatherReport" id="weatherReport">
     <h2 className={`text-${props.mode==='light'?'dark':'light'}`}>
       Check the Weather Report of your favourite city here!
     </h2>
@@ -81,7 +90,7 @@ export default function Users(props) {
             <tr className={` bg-secondary text-light lastRow`}>
               <th scope="row">{document.getElementById("textBox")?document.getElementById("textBox").value:"1"}</th>
               <td>{user.temp}</td>
-              <td>{user.feels_like}</td>
+              <td id="feelsLike">{user.feels_like}</td>
               <td>{user.humidity}</td>
             </tr>
           )}

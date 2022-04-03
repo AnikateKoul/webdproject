@@ -90,15 +90,9 @@ export default function ContactUS(props) {
 
   return (
     <>
-      <div style={{ marginTop: "105px" }}></div>
+      <div style={{ marginTop: "70px" }}></div>
       <div className="main2">
         <div style={{ height: "75px" }}>
-        <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Success!</strong> Your query has been successfully submitted!
-         </div>
-          <div id="failure" class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Error!</strong> Your query has not been sent due to errors.
-          </div>
 
           <div className="container my-5 py-5 z-depth-1 containerTemp">
             <section className="px-md-5 mx-md-5 text-center text-lg-left">
