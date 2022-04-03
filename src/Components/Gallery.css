@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 .gallery{
     background-color: black;
@@ -32,6 +33,9 @@
     typing 3.5s steps(40, end) infinite,
     blink-caret .75s step-end infinite;
 }
+img{
+    width: 100%;
+}
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
@@ -43,34 +47,6 @@
     from, to { border-color: transparent }
     50% { border-color: silver; }
 }
-img{
-    width: 100%;
-}
-.galleryRow{
-    display: flex;
-}
-.galleryCol{
-    width: 50%;
-    display: flex;
-}
-.galleryCard{
-    width: 50%;
-    position: relative; 
-    margin-bottom: -4px;
-    background-color: black;
-}
-
-.galleryCard:hover{
-    z-index: 1;
-    transform: skew(-15deg,-7.5deg) scale(1.15) ;
-    transition-duration: 0.3s;
-}
-.galleryCard:hover{
-    z-index: 1;
-}
-.galleryRow:hover .galleryCard:not(:hover) {
-    filter: blur(10px);
-}
 
 .galleryText{
     position: absolute;
@@ -79,18 +55,66 @@ img{
     left: 5%;
     color: silver;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Rubik+Glitch&display=swap');
 
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.galleryCol{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    /* object-fit: cover; */
+    min-height: 100%;
+    flex-grow: 2;
+
+}
+.galleryCol:last-child{
+    display: flex;
+    flex-grow: 1;
+
+}
+.galleryCol img{
+    width: 100%;
+    /* border-radius: 8%; */
+    border-collapse: collapse;
+    
+}
+.gallery .galleryCol img{
+    padding: 1% 1%;
+}
+.gallery img:hover{
+    cursor: pointer;
+    transform: skew(-7.5deg,-3.75deg) scale(1.15) ;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+.gallery:hover img:not(:hover){
+    filter: blur(5px);
+}
+
+
+@media screen and (max-width: 800px) {
+    .galleryCol {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .galleryCol {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 @media screen and (max-width: 1024px){
-    .galleryRow{
-        flex-direction: Column;
-    }
-    .galleryCol{
-        width: 100%;
-    }
     .main3-galleryText{
         font-size: 1.3rem;
     }
-    .galleryRow:hover .galleryCard:not(:hover) {
+    .gallery:hover img:not(:hover) {
     filter: blur(0px);
     }
 }
