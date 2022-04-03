@@ -3,8 +3,12 @@
 // $('#success').hide();
 let failure=document.getElementById('failure');
 let success=document.getElementById('success');
-success.style.display="none";
-failure.style.display="none";
+if(success) {
+  success.style.display="none";
+}
+if(failure) {
+  failure.style.display="none";
+}
 let firstName = document.getElementById("form-first-name");
 let lastName = document.getElementById("form-last-name");
 let email = document.getElementById("form-email");
@@ -36,7 +40,7 @@ if (lastName) {
     let value = e.target.value;
     if (regex.test(value)) {
       console.log("Your lastname is valid");
-      firstName.classList.remove("is-invalid");
+      lastName.classList.remove("is-invalid");
       validSecondName = true;
     } else {
       console.log("Your name is not valid");

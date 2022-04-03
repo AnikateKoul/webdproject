@@ -1,13 +1,93 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./ContactUs.css";
-// import "./validation.js";
 import { Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
-// import { FaMailBulk } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import { useForm } from "react-hook-form";
 
 export default function ContactUS(props) {
+  const onSubmit = data => console.log(data);
+  const initialValues = { firstname: "", lastname: "", email: "", companyName: "", phone: "", subject: "", issue: ""};
+  const [formValues, setFormValues] = useState(initialValues);
+  const init = { value1: 1, value2: 1, value3: 1, value4: 1, value5: 1, value6: 1};
+  const [formErrors, setFormErrors] = useState(init);
+  const [isSubmit, setIsSubmit] = useState(false);
+  const handleChange = (e) => {
+    const { name , value } = e.target;
+    setFormValues({...formValues, [name] : value});
+    setFormErrors(validate(formValues));
+
+    // console.log(formValues);
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmit(true);
+    console.log(formValues);
+    console.log(formErrors);
+    setFormErrors(validate(formValues));
+  }
+  const validate = (values) => {
+    const errors = {};
+    const regex = "";
+    if(!values.firstname) {
+      errors.firstname = "First name is required!";
+      errors.value1 = 1;
+    }
+    else
+    {
+      errors.value1 = 0;
+    }
+    if(!values.lastname) {
+      errors.lastname = "Last name is required!";
+      errors.value2 = 1;
+    }
+    else
+    {
+      errors.value2 = 0;
+    }
+    if(!values.email) {
+      errors.email = "Email is required!";
+      errors.value3 = 1;
+    }
+    else
+    {
+      errors.value3 = 0;
+    }
+    if(!(values.phone && values.phone.length == 10)) {
+      errors.phone = "Phone is required!";
+      errors.value4 = 1;
+    }
+    else
+    {
+      errors.value4 = 0;
+    }
+    if(!values.subject) {
+      errors.subject = "Subject is required!";
+      errors.value5 = 1;
+    }
+    else
+    {
+      errors.value5 = 0;
+    }
+    if(!values.issue) {
+      errors.issue = "Issue is required!";
+      errors.value6 = 1;
+    }
+    else
+    {
+      errors.value6 = 0;
+    }
+
+    return errors;
+  }
+  useEffect(() =>{
+    console.log(formErrors);
+    if(Object.keys(formErrors).length != 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
+
   return (
     <>
       <div style={{ marginTop: "105px" }}></div>
@@ -70,6 +150,7 @@ export default function ContactUS(props) {
                     </div>
                   </div>
                 </div>
+                <form onSubmit={handleSubmit}>
                 <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating rightDiv">
                   <div className="row">
                     <div className="col-md-6 name1">
@@ -78,14 +159,17 @@ export default function ContactUS(props) {
                           type="text"
                           id="form-first-name"
                           className="form-control colorChange"
+                          name="firstname"
+                          defaultValue={formValues.firstname}
+                          onChange={handleChange}
                         />
-                        <small
+                        {/* <small
                           id="namevalid"
                           class="form-text text-muted invalid-feedback"
                         >
-                          Your First Name must be 2-10 characters long and
-                          should not start with a number.
-                        </small>
+                          {formErrors.firstname}
+                        </small> */}
+                        <p>{formErrors.firstname}</p>
                         <label htmlFor="form-first-name" className='contactLab'>First name</label>
                       </div>
                     </div>
@@ -96,14 +180,11 @@ export default function ContactUS(props) {
                           type="text"
                           id="form-last-name"
                           className="form-control colorChange"
+                          name="lastname"
+                          defaultValue={formValues.lastname}
+                          onChange={handleChange}
                         />
-                        <small
-                          id="namevalid"
-                          class="form-text text-muted invalid-feedback"
-                        >
-                          Your Last Name must be 2-10 characters long and should
-                          not start with a number.
-                        </small>
+                        <p>{formErrors.lastname}</p>
                         <label htmlFor="form-last-name" className='contactLab'>Last name</label>
                       </div>
                     </div>
@@ -114,6 +195,9 @@ export default function ContactUS(props) {
                       type="text"
                       id="form-company"
                       className="form-control colorChange"
+                      name="companyName"
+                      defaultValue={formValues.companyName}
+                      onChange={handleChange}
                     />
                     <label htmlFor="form-company" className='contactLab'>Company name</label>
                   </div>
@@ -123,13 +207,11 @@ export default function ContactUS(props) {
                       type="email"
                       id="form-email"
                       className="form-control colorChange"
+                      name="email"
+                      defaultValue={formValues.email}
+                      onChange={handleChange}
                     />
-                    <small
-                      id="emailvalid"
-                      class="form-text text-muted invalid-feedback"
-                    >
-                      Your email must be a valid email
-                    </small>
+                    <p>{formErrors.email}</p>
                     <label htmlFor="form-email" className='contactLab'>E-mail</label>
                   </div>
 
@@ -140,13 +222,11 @@ export default function ContactUS(props) {
                       className="form-control colorChange"
                       minLength={10}
                       maxLength={10}
+                      name="phone"
+                      defaultValue={formValues.phone}
+                      onChange={handleChange}
                     />
-                    <small
-                      id="phonevalid"
-                      class="form-text text-muted invalid-feedback"
-                    >
-                      Your phone must be a valid 10 digit phone number.
-                    </small>
+                    <p>{formErrors.phone}</p>
                     <label htmlFor="form-number" className='contactLab'>Phone</label>
                   </div>
 
@@ -155,24 +235,26 @@ export default function ContactUS(props) {
                       type="text"
                       id="form-subject"
                       className="form-control colorChange"
+                      name="subject"
+                      defaultValue={formValues.subject}
+                      onChange={handleChange}
                     />
                     <label htmlFor="form-subject" className='contactLab'>Subject</label>
                   </div>
-                  <small
-                    id="subjectvalid"
-                    class="form-text text-muted invalid-feedback"
-                  >
-                    Please elaborate your issue in a bit more detail.
-                  </small>
+                  <p>{formErrors.subject}</p>
                   <div className="md-form md-outline mb-3 form-floating">
                     <textarea
                       id="form-message"
                       className="md-textarea form-control colorChange"
                       rows="3"
+                      name="issue"
+                      defaultValue={formValues.issue}
+                      onChange={handleChange}
                     ></textarea>
                     <label htmlFor="form-message" className='contactLab'>How we can help?</label>
                   </div>
-                  {/* <Link to="/thank"> */}
+                  {(!(formErrors.value1 + formErrors.value2 + formErrors.value3 + formErrors.value4 + formErrors.value5 + formErrors.value6)) ?
+                  (<Link to="/thank">
                   <button
                     type="submit"
                     className={`btn btn-${props.mode === "light" ? "info" : "light"
@@ -181,8 +263,16 @@ export default function ContactUS(props) {
                   >
                     Submit
                   </button>
-                  {/* </Link> */}
+                  </Link>) : (<button
+                    type="submit"
+                    className={`btn btn-${props.mode === "light" ? "info" : "light"
+                      } ml-0 my-10 contactButton`}
+                    id="submit"
+                  >
+                    Submit
+                  </button>)}
                 </div>
+                </form>
               </div>
             </section>
           </div>

@@ -43,7 +43,7 @@ export default function LoginForm() {
             />
             <label className="loginLab">Password</label>
           </div>
-          <a href="#" id='lgnLink' onClick={login}>
+          <a href="/" id='lgnLink' onClick={login}>
             <span></span>
             <span></span>
             <span></span>
