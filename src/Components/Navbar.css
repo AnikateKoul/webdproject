@@ -10,11 +10,27 @@
     margin-top: -3vh;
   }
 
-  #navBut,button:not(:disabled){
-     width:30vw;
+  #navBut,
+  button:not(:disabled) {
+    width: 30vw;
   }
 }
 
-.dropdown-item:hover{
-  background-color: rgb(24, 102, 217);;
+#btnsNav {
+  align-items: center;
+  justify-content: flex-end;
+  width:60%;
 }
+
+.dropdown-item:hover {
+  background-color: rgb(24, 102, 217);
+}
+
+#lgoutNav {
+  display: none;
+}
+#lgnNav {
+  margin:0px 7px;
+}
+
+

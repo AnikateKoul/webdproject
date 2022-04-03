@@ -1,7 +1,8 @@
 import { useState } from "react";
-import './Login.css'
+import './Login.css';
+import './Navbar.js';
 
-export default function LoginForm() {
+function LoginForm() {
   const [email, setLoginEmail] = useState("");
   const [password, setLoginPassword] = useState("");
 
@@ -18,6 +19,23 @@ export default function LoginForm() {
     console.log(result);
     if (result) {
       alert("Data saved successfully");
+      document.getElementById('lgnNav').style.display='none';
+      document.getElementById('lgoutNav').style.display="block";
+      document.getElementById('navBut').style.display='none';
+      console.log(result);
+      
+      document.getElementById('lgoutNav').addEventListener('click',()=>{
+        let a=window.confirm(`Do you really want to logout? :( `);
+        
+        if(a){
+        document.getElementById('lgnNav').style.display="block";
+        document.getElementById('navBut').style.display='block';
+        document.getElementById('lgoutNav').style.display="none";
+        }
+
+      })
+
+
       setLoginEmail("");
       setLoginPassword("");
     }
@@ -43,6 +61,7 @@ export default function LoginForm() {
             />
             <label className="loginLab">Password</label>
           </div>
+          
           <a href="#" id='lgnLink' onClick={login}>
             <span></span>
             <span></span>
@@ -50,8 +69,13 @@ export default function LoginForm() {
             <span></span>
             Login
           </a>
+          {/* if(result){
+            <Link to="/thank"></Link>
+          } */}
         </form>
       </div>
     </>
   );
 }
+
+export default LoginForm;

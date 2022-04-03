@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"
+import "./Navbar.css";
 
 export default function Navbar(props) {
   return (
@@ -90,11 +90,14 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
-            <ul className="nav navbar-nav ml-auto">
+            <ul className="nav navbar-nav ml-auto" id='btnsNav'>
               <li className="nav-item">
                 <Link className="nav-link" to="/login">
-                <button className="btn btn-success ">Login</button>
+                <button className="btn btn-success " id='lgnNav'>Login</button>
                 </Link>
+              </li>
+              <li className="nav-item">
+                <button className="btn btn-success " id='lgoutNav'>Logout</button>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/signup">
