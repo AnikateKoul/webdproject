@@ -23,7 +23,6 @@ export default function Place2(props) {
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Goa</h1>
             <p>
               Mention the word “Goa” and scenes of lazily swaying palms, golden
               sands, dread-locked-beer-swilling-hippies, dance parties and yoga
@@ -49,7 +48,6 @@ export default function Place2(props) {
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Goa</h1>
             <p>
             One of the best ways to experience Goa is by staying in a local home with a Goan family. Not only will you be guaranteed the best of Goan home cooking, but you also get a glimpse of the local culture, too. Many homestays are located in the North of Goa along the Konkan coast, bordering Maharashtra. You’ll also find a homestays in Panjim (Panaji) and in the south of Goa towards Karnataka. Nativefolks are a company helping travellers experience the local side of Goa and offer a mix of homestays and excursions throughout the state. 
             </p>
@@ -65,7 +63,6 @@ export default function Place2(props) {
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Goa</h1>
             <p>
             Even though Goa is most famous for it’s beaches and wild parties, there really is something for everyone in Goa which makes it perfect for couples and families, not just party people. There’s plenty to explore; from luxury hotels to cheap and cheerful beach huts, gourmet restaurants, mellow yoga retreats, colourful hippie markets and plenty of natural beauty spots as well as historic and cultural attractions.Goa has over 300 km of tropical coast line and all the beaches have their own special charm and character which means you will never get bored. From the empty, white sands of the beaches in the South to the action packed beaches in Calangute or hippy Arambol, mellow Morjim, colourful Palolem or secluded Cola Beach – there’s a beach to suit everyone in Goa! <br/><br/>Goa is a foodies heaven! Indian food is always a delight and Goan cuisine which fuses the flavours of Indian and Portuguese cuisines with a healthy amount of fresh seafood and tasty spices is a unique treat. But it’s not just about curry, any food you want, from anywhere in the world, you can enjoy in Goa.
             </p>

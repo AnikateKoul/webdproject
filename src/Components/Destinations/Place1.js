@@ -23,7 +23,6 @@ export default function Place1(props) {
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Shimla</h1>
             <p>
               Breathtaking landscapes, colossal mountains, bustling markets,
               upscale hotels and restaurants, and pleasant weather all year
@@ -40,14 +39,13 @@ export default function Place1(props) {
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
           <div className="image ">
             <img
-              src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
+              src="https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
               alt=""
             />
           </div>
           <div
-            className={`text text-${props.mode === "light" ? "dark" : "light"}`}
+            className={`text text-${props.mode === "light" ? "dark" : "light"}` }
           >
-            <h1 className="">Shimla</h1>
             <p>
               The temperature varies between 0°C to 10°C during snowfall in
               Shimla. The average temperature is on a higher side at the time of
@@ -62,14 +60,13 @@ export default function Place1(props) {
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
           <div className="image ">
             <img
-              src="https://images.unsplash.com/photo-1583143874828-de3d288be51a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzc29vcmllJTJDJTIwaW5kaWF8ZW58MHx8MHx8&w=1000&q=80"
+              src="https://images.unsplash.com/photo-1567253549588-5bcdac08b07b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
               alt=""
             />
           </div>
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Masoori</h1>
             <p>
               Being a popular tourist hotspot of the country, Shimla boasts of
               numerous tourist attractions which need a minimum of 3 days and 2

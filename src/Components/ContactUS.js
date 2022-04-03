@@ -169,7 +169,7 @@ export default function ContactUS(props) {
                         >
                           {formErrors.firstname}
                         </small> */}
-                        <p>{formErrors.firstname}</p>
+                        <p style={{ color: 'red' }}>{formErrors.firstname}</p>
                         <label htmlFor="form-first-name" className='contactLab'>First name</label>
                       </div>
                     </div>
@@ -184,7 +184,7 @@ export default function ContactUS(props) {
                           defaultValue={formValues.lastname}
                           onChange={handleChange}
                         />
-                        <p>{formErrors.lastname}</p>
+                        <p style={{ color: 'red' }}>{formErrors.lastname}</p>
                         <label htmlFor="form-last-name" className='contactLab'>Last name</label>
                       </div>
                     </div>
@@ -211,7 +211,7 @@ export default function ContactUS(props) {
                       defaultValue={formValues.email}
                       onChange={handleChange}
                     />
-                    <p>{formErrors.email}</p>
+                    <p style={{ color: 'red' }}>{formErrors.email}</p>
                     <label htmlFor="form-email" className='contactLab'>E-mail</label>
                   </div>
 
@@ -226,7 +226,7 @@ export default function ContactUS(props) {
                       defaultValue={formValues.phone}
                       onChange={handleChange}
                     />
-                    <p>{formErrors.phone}</p>
+                    <p style={{ color: 'red' }}>{formErrors.phone}</p>
                     <label htmlFor="form-number" className='contactLab'>Phone</label>
                   </div>
 
@@ -241,7 +241,7 @@ export default function ContactUS(props) {
                     />
                     <label htmlFor="form-subject" className='contactLab'>Subject</label>
                   </div>
-                  <p>{formErrors.subject}</p>
+                  <p style={{ color: 'red' }}>{formErrors.subject}</p>
                   <div className="md-form md-outline mb-3 form-floating">
                     <textarea
                       id="form-message"

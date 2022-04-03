@@ -16,24 +16,21 @@ export default function Place5(props) {
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
           <div className="image ">
             <img
-              src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
+              src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/f6dogpfgq9nbowtwmh2z2t91o0qu_1574494280_shutterstock_329467904.jpg"
               alt=""
             />
           </div>
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Jaisalmer</h1>
             <p>
               Jaisalmer is located in the middle of the Thar desert, the Great
               Indian desert, and almost all of the buildings and temples are
               made out of finely sculptured sandstone. This is also how
-              Jaisalmer got its nickname of “The Golden City of India”.
-              Jaisalmer is right next to the Pakistan border and the climate can
-              be pretty unforgiving at times with temperatures rising up to
-              45°C. But this gem of a city should be on everyone’s radar! Go on
-              sunset tour through the vast Thar desert, relax in the comforts of
-              an authentic havelli or sip some tea on a roof top terrace
+              Jaisalmer got its nickname of “The Golden City of India”. But this
+              gem of a city should be on everyone’s radar! Go on sunset tour
+              through the vast Thar desert, relax in the comforts of an
+              authentic havelli or sip some tea on a roof top terrace
               overlooking the city. There are so many unique and epic things to
               do in Jaisalmer and we guarantee that you’ll immediately fall in
               love with this city!
@@ -43,14 +40,13 @@ export default function Place5(props) {
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
           <div className="image ">
             <img
-              src="https://i.pinimg.com/originals/7f/62/8d/7f628daeff85825989a0d30a89d7b260.jpg"
+              src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/05/Jaisalmer-Monsoon-Cover.jpg"
               alt=""
             />
           </div>
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Jaisalmer</h1>
             <p>
               The city offers everything for every budget. You may like to book
               a specific tour and would just like to sit back and relax while
@@ -66,28 +62,22 @@ export default function Place5(props) {
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
           <div className="image ">
             <img
-              src="https://images.unsplash.com/photo-1583143874828-de3d288be51a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzc29vcmllJTJDJTIwaW5kaWF8ZW58MHx8MHx8&w=1000&q=80"
+              src="https://hikerwolf.com/wp-content/uploads/2020/04/top-10-Jaisalmer-Header.jpg"
               alt=""
             />
           </div>
           <div
             className={`text text-${props.mode === "light" ? "dark" : "light"}`}
           >
-            <h1 className="">Jaisalmer</h1>
             <p>
               Spring is the best time to be in Jaisalmer because then the
               temperature during the day is not too hot and nights are not too
-              cold. <br />
-              When you are in Jaisalmer you must try their local cuisines and
-              “chat” at the nook of the roads. Many restaurants would suffice
-              your food with the musicians playing cool Rajasthani songs on
-              their violins. Another way to enjoy the food in the city is to
-              explore the market and try different cuisines there. Some of the
-              recommended restaurants are Café de Kuku for its exotic cold
-              coffee, The Seven Spice Restaurant, which specializes in Indian
-              and Tibetan cuisine and the local cuisines of Jaisalmer, which
-              includes a menu like Kadhi Pakora, bharwan aloo, vegetable kebabs,
-              Gatte Ki Sabzi, and kulfi.
+              cold. When you are in Jaisalmer you must try their local cuisines
+              and “chat” at the nook of the roads. Some of the recommended
+              restaurants are Café de Kuku for its exotic cold coffee, The Seven
+              Spice Restaurant, which specializes in Indian and Tibetan cuisine
+              and the local cuisines of Jaisalmer, which includes a menu like
+              Kadhi Pakora,vegetable kebabs, Gatte Ki Sabzi, and kulfi.
             </p>
           </div>
         </div>
