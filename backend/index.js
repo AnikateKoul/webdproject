@@ -12,7 +12,6 @@ mongoose.connect(
 );
 
 // Schema for users of app
-//wtf
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,

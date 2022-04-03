@@ -55,17 +55,17 @@ export default function ContactUS(props) {
                     </p>
                     <div className="phone">
                       <p>
-                        <BsFillTelephoneFill /> +800 123 456
+                        <BsFillTelephoneFill /> +91 9725144789
                       </p>
                     </div>
                     <div className="email">
                       <p>
-                        <FaEnvelope /> wanderlust@gmail.com
+                        <FaEnvelope /> wanderlusters@gmail.com
                       </p>
                     </div>
                     <div className="address">
                       <p>
-                        <FaAddressCard /> 221B, Baker Street
+                        <FaAddressCard /> Lucknow, UP 50012, India
                       </p>
                     </div>
                   </div>

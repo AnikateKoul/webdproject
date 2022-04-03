@@ -48,12 +48,10 @@ export default function Footer(props) {
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3"></i> Company name
+                  <i className="fas fa-gem me-3"></i> Wanderlusters
                 </h6>
                 <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                Established in 2022, Wanderlusters has since positioned itself as one of the leading companies, providing great overview of different tourist places, exclusive details, and a seamless online booking experience to many of its customers. The experience of booking your hotel stay, and holiday package through our desktop site can be done with complete ease and no hassles at all. 
                 </p>
               </div>
 
@@ -93,13 +91,13 @@ export default function Footer(props) {
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3"></i>
-                  info@example.com
+                  wanderlusters@gmail.com
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> + 01 234 567 88
+                  <i className="fas fa-phone me-3"></i> +91 9812457861
                 </p>
                 <p>
-                  <i className="fas fa-print me-3"></i> + 01 234 567 89
+                  <i className="fas fa-print me-3"></i> +91 9725144789
                 </p>
               </div>
             </div>
