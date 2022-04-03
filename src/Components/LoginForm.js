@@ -2,14 +2,14 @@ import { useState } from "react";
 import './Login.css'
 
 export default function LoginForm() {
-  const [email2, setEmail] = useState("");
-  const [password2, setPassword] = useState("");
+  const [email, setLoginEmail] = useState("");
+  const [password, setLoginPassword] = useState("");
 
-  const handleOnSubmit = async (e) => {
+  const login = async (e) => {
     e.preventDefault();
-    let result = await fetch("http://localhost:5000/signin", {
+    let result = await fetch("http://localhost:5000/login", {
       method: "post",
-      body: JSON.stringify({ email2, password2 }),
+      body: JSON.stringify({ email, password }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -18,8 +18,8 @@ export default function LoginForm() {
     console.log(result);
     if (result) {
       alert("Data saved successfully");
-      setEmail("");
-      setPassword("");
+      setLoginEmail("");
+      setLoginPassword("");
     }
   };
   return (
@@ -30,20 +30,20 @@ export default function LoginForm() {
           <div className="user-box">
             <input
               type="email" className="lgnInpt"
-              value={email2} name="" required=""
-              onChange={(e) => setEmail(e.target.value)}
+              value={email} name="" required=""
+              onChange={(e) => setLoginEmail(e.target.value)}
             />
               <label className="loginLab">Email</label>
           </div>
           <div className="user-box">
             <input
               type="password" name=""
-              value={password2} className="lgnInpt" required=""
-              onChange={(e) => setPassword(e.target.value)}
+              value={password} className="lgnInpt" required=""
+              onChange={(e) => setLoginPassword(e.target.value)}
             />
             <label className="loginLab">Password</label>
           </div>
-          <a href="#" id='lgnLink' onClick={handleOnSubmit}>
+          <a href="#" id='lgnLink' onClick={login}>
             <span></span>
             <span></span>
             <span></span>

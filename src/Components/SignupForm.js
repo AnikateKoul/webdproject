@@ -1,36 +1,37 @@
-import { useState } from "react";
-import "./SignupForm.css";
+import { useState } from 'react';
+import './SignupForm.css';
 
 export default function SignupForm(props) {
-  let myStyle = {
-    color: props.mode === "dark" ? "white" : "#212529",
-    backgroundColor: props.mode === "dark" ? "#212529" : "white",
-    border: props.mode === "dark" ? "white" : "#212529",
-  };
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [contactno, setContactNo] = useState("");
+    let myStyle = {
+        color: props.mode === "dark" ? "white" : "#212529",
+        backgroundColor: props.mode === "dark" ? "#212529" : "white",
+        border: props.mode === "dark" ? "white" : "#212529",
+      };
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [contactno, setContactNo] = useState("");
 
-  const handleOnSubmit = async (e) => {
-    e.preventDefault();
-    let result = await fetch("http://localhost:5000/register", {
-      method: "post",
-      body: JSON.stringify({ name, email, password, contactno }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    result = await result.json();
-    console.warn(result);
-    if (result) {
-      alert("Data saved successfully");
-      setName("");
-      setEmail("");
-      setPassword("");
-      setContactNo("");
+    const handleOnSubmit = async (e) => {
+        e.preventDefault();
+        let result = await fetch(
+        'http://localhost:5000/register', {
+            method: "post",
+            body: JSON.stringify({ name, email, password,contactno }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        result = await result.json();
+        console.warn(result);
+        if (result) {
+            alert("Data saved successfully");
+            setName("");
+            setEmail("");
+            setPassword("");
+            setContactNo("");
+        }
     }
-  };
   return (
     <>
       <div className="main">
