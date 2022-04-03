@@ -112,11 +112,7 @@
   height: 100%;
   border-radius: 2%;
 }
-
 @media screen and (max-width: 1024px) {
-  .main2 {
-    min-height: 150vh;
-  }
   .phone,
   .email,
   .address {
@@ -140,9 +136,6 @@
   }
   .rightDiv {
     margin-top: 5%;
-  }
-  .name1 {
-    margin-bottom: 4%;
   }
 }
 small {
