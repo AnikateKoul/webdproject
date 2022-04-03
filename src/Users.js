@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./Users.css";
 
 export default function Users(props) {
+  // dynamicBG();
   const [user, setUser] = useState([]);
   const options = {
     method: "GET",
@@ -21,7 +22,9 @@ export default function Users(props) {
       .then((data) => {
         let datas = data;
         setUser(datas);
+        dynamicBG();
       });
+      
   };
   useEffect(() => {
     fetchData();
@@ -41,24 +44,35 @@ export default function Users(props) {
   useEffect(() => {
     fetchData();
   }, []);
-  let feelsLike = document.getElementById("feelsLike");
+  let buttonWeather=document.getElementById('weatherRpt');
+  if(buttonWeather){
+  var dynamicBG=function dynamicBG(){
+    let feelsLike=document.getElementById('feelsLike');
     if (feelsLike!=null) {
       let temp = Number(feelsLike.innerText);
       let weatherReport = document.getElementById("weatherReport");
       if (temp < 15) {
-        weatherReport.style.backgroundImage =
-          "url('https://images.unsplash.com/photo-1529017342279-ca5eb1c54bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80')";
+        console.log(temp);
+        weatherReport.classList.add('cold');
+        weatherReport.classList.remove('hot');
+        weatherReport.classList.remove('mid');
       }
       else if (temp >=29) {
-        weatherReport.style.backgroundImage =
-          "url('https://cff2.earth.com/uploads/2017/10/06170735/The-10-hottest-places-on-Earth.jpg')";
+        console.log(temp);
+        weatherReport.classList.add('hot');
+        weatherReport.classList.remove('cold');
+        weatherReport.classList.remove('mid');
         }
       else{
-        weatherReport.style.backgroundImage =
-          "url('https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')";
-          
+        console.log(temp);
+        weatherReport.classList.add('mid');
+        weatherReport.classList.remove('hot');
+        weatherReport.classList.remove('cold');
       }
-    }
+    } 
+  }
+}
+
   return (
     <>
       <div className="weatherReport" id="weatherReport">

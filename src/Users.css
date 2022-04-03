@@ -26,11 +26,20 @@ table{
 } */
 .weatherReport{
     background-image: url(https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 .weatherReport h2{
     padding: 3% 0;
     color: white !important;
+}
+.cold{
+    background-image: url("https://images.unsplash.com/photo-1513633220151-48d746a2ce7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+.mid{
+    background-image: url('https://images.unsplash.com/photo-1529017342279-ca5eb1c54bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80');
+}
+.hot{
+    background-image: url("https://cff2.earth.com/uploads/2017/10/06170735/The-10-hottest-places-on-Earth.jpg");
 }
