@@ -83,26 +83,26 @@ app.post("/register", async (req, resp) => {
     resp.send("Something Went Wrong");
   }
 });
-app.post("/login",async(req,res)=>{
-  try{
-    const user2= new User2(req.body);
+app.post("/login", async (req, res) => {
+  try {
+    const user2 = new User2(req.body);
     console.log(user2);
-    const enteredEmail=user2.email;
-    console.log(enteredEmail)
-    const enteredPassword=user2.password;
-    console.log(enteredPassword)
-    const query  = User.where({ email: `${enteredEmail}` });
+    const enteredEmail = user2.email;
+    console.log(enteredEmail);
+    const enteredPassword = user2.password;
+    console.log(enteredPassword);
+    const query = User.where({ email: `${enteredEmail}` });
     query.findOne(function (err, User) {
-    if (err) console.log("sorry, you'll have to Sign Up first!!!!!!!!!!");
-    if (User) {
-    console.log("yeah, alright... enter the password now.");
-    if(enteredPassword===(User.password)){console.log("You are now logged in!!!!!!!");
-      res.send(req.body);
-  }
-  }
-  }
-);
-  }catch(e){
+      if (err) console.log("sorry, you'll have to Sign Up first!!!!!!!!!!");
+      if (User) {
+        console.log("yeah, alright... enter the password now.");
+        if (enteredPassword === User.password) {
+          console.log("You are now logged in!!!!!!!");
+          res.send(req.body);
+        }
+      }
+    });
+  } catch (e) {
     resp.send("We're sorry but some error occured!!!!!!!!!!!!");
   }
 });

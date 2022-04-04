@@ -73,19 +73,19 @@ export default function Slider(props) {
                 <div className="profile"><img
                         src="https://d3nn873nee648n.cloudfront.net/900x600/19008/220-SM887741.jpg"
                         alt=""/></div>
-                <div className="rev"> <p className='revContent'>"The trip was wonderful!  On Maui we enjoyed the pool and beach, the LeLe Luau was outstanding, I play the Kaanapali Kai golf course, shopping in Lahaina, lots of great dinners/mai tais and just cruising around the island made the time pass too quickly. It was a great way to celebrate 5 years together." ~ <b>Jenny</b></p></div>
+                <div className="rev"> <p className='revContent'>"The trip was wonderful!  On goa we enjoyed the pool and beach, the bonfire was outstanding, shopping in Lahaina, lots of great dinners/mai tais and just cruising around made the time pass too quickly. It was a great way to celebrate 5 years together." ~ <b>Kajal</b></p></div>
             </div>
             <div className="review">
                 <div className="profile"><img
                         src="https://i.pinimg.com/564x/fd/69/f1/fd69f124744622c22bad3fcfc6036d52.jpg"
                         alt=""/></div>
-                <div className="rev"> <p className='revContent'>"If there was a contest for the best travel blog, I would tell everyone to vote for me. Then I would go vote for Audrey and Dan. They tell heartwarming stories and take incredible, out-of-this-world photographs. Their blog focuses on cultural travel and sustainability issues (they even work with the UN Global Sustainable Tourism Council). I focus on the nuts and bolts of going places, whereas they focus on the people. They are simply great storytellers." ~ <b>Jake</b></p></div>
+                <div className="rev"> <p className='revContent'>"If there was a contest for the best travel blog, I would tell everyone to vote for them. They tell heartwarming stories and take incredible, out-of-this-world photographs. Their blog focuses on cultural travel and sustainability issues (they even work with the UN Global Sustainable Tourism Council). I focus on the nuts and bolts of going places, whereas they focus on the people. They are simply great storytellers." ~ <b>Rashmika</b></p></div>
             </div>
             <div className="review">
                 <div className="profile"><img
                         src="https://i.pinimg.com/564x/4b/f7/34/4bf734cfb024b2a997ad7337e4aaf4c6.jpg"
                         alt=""/></div>
-                <div className="rev"> <p className='revContent'> "While I read many travel-hacking blogs, I visit this one reguarly because they provides industry analysis and behind-the-scenes information on loyalty programs and airlines. They don’t just provide trip reports or share deals and reward opportunities, they gives you context and a greater understanding of how travel hacking and airlines operate." ~ <b>Alex</b></p></div>
+                <div className="rev"> <p className='revContent'> "W hile I read many travel-hacking blogs, I visit this one reguarly because they provide industry analysis and behind-the-scenes information on loyalty programs and airlines. They don’t just provide trip reports or share deals and reward opportunities, they give you context and a greater understanding of how travel hacking and airlines operate." ~ <b>Alex</b></p></div>
             </div>
         </div>
     </div>

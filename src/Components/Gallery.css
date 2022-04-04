@@ -14,7 +14,7 @@
 .main3-galleryText{
     position: absolute;
     color: white;
-    top: 30%;
+    top: 23%;
     font-size: 3rem;
     color: silver;
     word-spacing: 5px;
@@ -80,15 +80,10 @@ img{
 }
 .gallery img:hover{
     cursor: pointer;
-    transform: skew(-6deg,-3deg) scale(1.15) ;
+    transform: scale(1.15);
     transition-duration: 0.5s;
     z-index: 1;
-    border-radius: 1.3rem;
 }
-.gallery:hover img:not(:hover){
-    filter: blur(5px);
-}
-
 @media screen and (max-width: 600px) {
     .galleryCol {
       flex: 100%;
