@@ -10,7 +10,7 @@ export default function Place4(props) {
           src="https://images.unsplash.com/photo-1600438831035-48f5f196d3bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           alt=""
         />
-        <div class="bottom-left">Ladakh</div>
+        <div className="bottom-left">Ladakh</div>
       </div>
       <div className="cards">
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>

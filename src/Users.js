@@ -90,7 +90,7 @@ export default function Users(props) {
           <label htmlFor="form-subject">City Name</label>
           <button
             type="submit"
-            class="btn btn-primary mb-2 seeWeather"
+            className="btn btn-primary mb-2 seeWeather"
             id="weatherRpt"
             onClick={HandleClick}
           >

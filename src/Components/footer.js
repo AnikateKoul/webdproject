@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Footer(props) {
   return (
     <>
-    <div class="d-flex flex-column ">
+    <div className="d-flex flex-column ">
       <footer
         className={`text-center fixed-bottom text-lg-start  bg-${
           props.mode === "light" ? "light" : "dark"
