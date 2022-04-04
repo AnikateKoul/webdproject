@@ -144,8 +144,8 @@ export default function ContactUS(props) {
                     </div>
                   </div>
                 </div>
-                <form onSubmit={handleSubmit}>
                 <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating rightDiv">
+                <form onSubmit={handleSubmit} id="contactForm">
                   <div className="row">
                     <div className="col-md-6 name1">
                       <div className="md-form md-outline mb-0 form-floating">
@@ -265,8 +265,8 @@ export default function ContactUS(props) {
                   >
                     Submit
                   </button>)}
-                </div>
                 </form>
+                </div>
               </div>
             </section>
           </div>
