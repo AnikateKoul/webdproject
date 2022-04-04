@@ -85,7 +85,7 @@ export default function Slider(props) {
                 <div className="profile"><img
                         src="https://i.pinimg.com/564x/4b/f7/34/4bf734cfb024b2a997ad7337e4aaf4c6.jpg"
                         alt=""/></div>
-                <div className="rev"> <p className='revContent'> "W hile I read many travel-hacking blogs, I visit this one reguarly because they provide industry analysis and behind-the-scenes information on loyalty programs and airlines. They don’t just provide trip reports or share deals and reward opportunities, they give you context and a greater understanding of how travel hacking and airlines operate." ~ <b>Alex</b></p></div>
+                <div className="rev"> <p className='revContent'> "What I love about Wanderlusters is the fabulous photography – taken by the blogger’s own fair hands – that perfectly captures the spirit of India.They beautifully journal their backpacking travel tales as they venture to the nooks and crannies of India, where they magically weave the magic of heritage, culture and mythology into something tangible for armchair travelers. " ~ <b>Rohit</b></p></div>
             </div>
         </div>
     </div>

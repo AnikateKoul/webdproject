@@ -145,17 +145,17 @@ export default function ContactUS(props) {
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://twitter.com/iiit_lucknow" target={"_blank"} rel={"noreferrer"}> <FaTwitter color="white"/></a> Twitter
+                        <a href="https://twitter.com/iiit_lucknow" target={"_blank"} rel={"noreferrer"}> <FaTwitter/></a> Twitter
                       </p>
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://www.facebook.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaFacebook color="white"/></a> Facebook 
+                        <a href="https://www.facebook.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaFacebook/></a> Facebook 
                       </p>
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://www.instagram.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaInstagram color="white"/></a> Instagram 
+                        <a href="https://www.instagram.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaInstagram/></a> Instagram 
                       </p>
                     </div>
                   </div>
