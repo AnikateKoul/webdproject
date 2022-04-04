@@ -31,7 +31,7 @@ export default function About(props) {
         style={myStyle}
       >
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingOne">
+          <h2 className="accordion-header aboutHead" id="flush-headingOne">
             <button
               className="accordion-button collapsed title title"
               type="button"
@@ -66,7 +66,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingTwo">
+          <h2 className="accordion-header aboutHead" id="flush-headingTwo">
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -116,7 +116,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingThree">
+          <h2 className="accordion-header aboutHead" id="flush-headingThree">
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -179,7 +179,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingFour">
+          <h2 className="accordion-header aboutHead" id="flush-headingFour">
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -210,7 +210,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingFive">
+          <h2 className="accordion-header aboutHead" id="flush-headingFive">
             <button
               className="accordion-button collapsed title"
               type="button"
