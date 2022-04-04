@@ -3,8 +3,7 @@ import "./ContactUs.css";
 import { Link } from "react-router-dom";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaAddressCard } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
-import { useForm } from "react-hook-form";
+import { FaEnvelope, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function ContactUS(props) {
   const onSubmit = data => console.log(data);
@@ -29,8 +28,10 @@ export default function ContactUS(props) {
   }
   const validate = (values) => {
     const errors = {};
-    const regex = "";
-    if(!values.firstname) {
+    const regex1 = /^[a-zA-Z]([0-9a-zA-Z]){2,10}$/;
+    const regex2 = /^([_\-.0-9a-zA-Z]+)@([_\-.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    const regex3 = /^([0-9]){10}$/;
+    if((!values.firstname) || (!regex1.test(values.firstname))) {
       errors.firstname = "First name is required!";
       errors.value1 = 1;
     }
@@ -38,7 +39,7 @@ export default function ContactUS(props) {
     {
       errors.value1 = 0;
     }
-    if(!values.lastname) {
+    if(!values.lastname || (!regex1.test(values.lastname))) {
       errors.lastname = "Last name is required!";
       errors.value2 = 1;
     }
@@ -46,7 +47,7 @@ export default function ContactUS(props) {
     {
       errors.value2 = 0;
     }
-    if(!values.email) {
+    if(!values.email || (!regex2.test(values.email))) {
       errors.email = "Email is required!";
       errors.value3 = 1;
     }
@@ -54,7 +55,7 @@ export default function ContactUS(props) {
     {
       errors.value3 = 0;
     }
-    if(!(values.phone && values.phone.length == 10)) {
+    if((!values.phone) || (!regex3.test(values.phone))) {
       errors.phone = "Phone is required!";
       errors.value4 = 1;
     }
@@ -140,6 +141,21 @@ export default function ContactUS(props) {
                     <div className="address">
                       <p>
                         <FaAddressCard /> Lucknow, UP 50012, India
+                      </p>
+                    </div>
+                    <div className="svgs">
+                      <p>
+                        <a href="https://twitter.com/iiit_lucknow" target={"_blank"} rel={"noreferrer"}> <FaTwitter color="white"/></a> Twitter
+                      </p>
+                    </div>
+                    <div className="svgs">
+                      <p>
+                        <a href="https://www.facebook.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaFacebook color="white"/></a> Facebook 
+                      </p>
+                    </div>
+                    <div className="svgs">
+                      <p>
+                        <a href="https://www.instagram.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaInstagram color="white"/></a> Instagram 
                       </p>
                     </div>
                   </div>

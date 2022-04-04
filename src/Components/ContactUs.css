@@ -90,7 +90,8 @@
 }
 .phone,
 .email,
-.address {
+.address,
+.svgs {
   display: flex;
   color: white;
   font-size: 1.3rem;
@@ -115,7 +116,8 @@
 @media screen and (max-width: 1024px) {
   .phone,
   .email,
-  .address {
+  .address,
+  .svgs {
     font-size: 1.1rem;
   }
   .heading {
@@ -128,7 +130,8 @@
   }
   .phone,
   .email,
-  .address {
+  .address,
+  .svgs {
     font-size: 1.1rem;
   }
   .heading {

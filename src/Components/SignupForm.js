@@ -48,7 +48,7 @@ export default function SignupForm(props) {
           <div className="shape"></div>
         </div>
         <form action="" style={myStyle} id="sgnForm">
-          <h3 style={myStyle}>Login Here </h3>
+          <h3 style={myStyle}>Sign Up Here </h3>
           <label className="SUlabel" for="username" style={myStyle}>
             Name
           </label>

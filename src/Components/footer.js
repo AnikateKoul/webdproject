@@ -12,36 +12,6 @@ export default function Footer(props) {
         } text-${props.mode === "light" ? "dark" : "light"}`}
         style={{ position: "relative", top: "0px", zIndex: "-1" }}
       >
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div className="me-5 d-none d-lg-block ">
-            <div>
-              Get connected with us on social networks:
-              <div className="d-inline-flex p-2 bd-highlight flex-fill justify-content-end">
-                <div className="mx-5">
-                  <a
-                    href="https://www.facebook.com/iiitlucknow/"
-                    target="_blank"
-                  >
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </div>
-
-                <a
-                  href="https://www.instagram.com/iiitlucknow/?hl=en"
-                  target="_blank"
-                >  
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-
-                <div className="mx-5">
-                <a href="https://twitter.com/iiit_lucknow" target="_blank">  <ion-icon name="logo-twitter">
-                </ion-icon>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className="">
           <div className="container text-center text-md-start mt-5">
