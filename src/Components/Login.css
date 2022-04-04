@@ -23,7 +23,7 @@
   z-index: -1;
   width: calc(100% + var(--border-width) * 2);
   height: calc(100% + var(--border-width) * 2);
-  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background: linear-gradient(60deg,  #384d86, #30e5ff, #3984be, #3570c8, #5f8cf2, #28a7d8, #5ff281, #30706f); 
   background-size: 300% 300%;
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));
@@ -32,7 +32,7 @@
 .login-box #loginTxt {
   margin: 0 0 6.8vh;
   padding: 0;
-  color: rgb(8, 102, 24);
+  color: black;
   font-size: 2.5rem;
   text-align: center;
 }

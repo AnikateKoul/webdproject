@@ -51,7 +51,7 @@ export default function Footer(props) {
                   <i className="fas fa-gem me-3"></i> Wanderlusters
                 </h6>
                 <p style={{textAlign: 'justify'}}>
-                Established in 2022, Wanderlusters has since positioned itself as one of the leading companies, providing great overview of different tourist places, exclusive details, and a seamless online booking experience to many of its customers. The experience of booking your hotel stay, and holiday package through our desktop site can be done with complete ease and no hassles at all. 
+                Established in January 2022, Wanderlusters has since positioned itself as one of the leading companies, providing great overview of different tourist places, exclusive details, and a seamless online booking experience to many of its customers. The experience of booking your hotel stay, and holiday package through our desktop site can be done with complete ease and no hassles at all. 
                 </p>
               </div>
 

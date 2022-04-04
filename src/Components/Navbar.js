@@ -75,12 +75,12 @@ export default function Navbar(props) {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-3" to="/about">
+                <Link className="nav-link active mx-3" id='aboutNav' to="/about">
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-3" to="/contact">
+                <Link className="nav-link active mx-3" id='contactNav' to="/contact">
                   Contact Us
                 </Link>
               </li>

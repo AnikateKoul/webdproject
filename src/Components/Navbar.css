@@ -16,6 +16,13 @@
   }
 }
 
+#aboutNav{
+  width:9rem;
+}
+#contactNav{
+  width:9rem;
+}
+
 #btnsNav {
   align-items: center;
   justify-content: flex-end;

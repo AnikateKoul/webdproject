@@ -77,13 +77,13 @@ img{
 
 .gallery .galleryCol img{
     padding: 1% 1%;
-    border-radius: 1.5rem;
 }
 .gallery img:hover{
     cursor: pointer;
     transform: skew(-6deg,-3deg) scale(1.15) ;
     transition-duration: 0.5s;
     z-index: 1;
+    border-radius: 1.3rem;
 }
 .gallery:hover img:not(:hover){
     filter: blur(5px);
