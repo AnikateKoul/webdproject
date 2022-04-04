@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignupForm.css';
 
 export default function SignupForm(props) {
+  const navigate = useNavigate();
     let myStyle = {
         color: props.mode === "dark" ? "white" : "#212529",
         backgroundColor: props.mode === "dark" ? "#212529" : "white",
@@ -35,6 +37,7 @@ export default function SignupForm(props) {
             setEmail("");
             setPassword("");
             setContactNo("");
+            navigate("/login");
         }
     }
   return (
