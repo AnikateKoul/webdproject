@@ -1,14 +1,19 @@
 import { useState } from "react";
 import './Login.css';
 import './Navbar.js';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+  var result;
+  var ans = 0;
+  const navigate = useNavigate();
   const [email, setLoginEmail] = useState("");
   const [password, setLoginPassword] = useState("");
 
   const login = async (e) => {
     e.preventDefault();
-    let result = await fetch("http://localhost:5000/login", {
+    result = await fetch("http://localhost:5000/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {
@@ -23,6 +28,8 @@ function LoginForm() {
       document.getElementById('lgoutNav').style.display="block";
       document.getElementById('navBut').style.display='none';
       console.log(result);
+      navigate("/");
+
       
       document.getElementById('lgoutNav').addEventListener('click',()=>{
         let a=window.confirm(`Do you really want to logout? :( `);
@@ -68,8 +75,8 @@ function LoginForm() {
             <span></span>
             Login
           </a>
-          {/* if(result){
-            <Link to="/thank"></Link>
+          {/* {
+            (ans) ? (<Link to="/thank"><button type="submit" id="lgnLink" onClick={login}>Login</button></Link>) : (<button type="submit" id="lgnLink" onClick={login}>Login</button>)
           } */}
         </form>
       </div>
