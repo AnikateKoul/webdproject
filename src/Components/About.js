@@ -6,6 +6,7 @@ export default function About(props) {
   let myStyle = {
     color: props.mode === "dark" ? "white" : "#212529",
     backgroundColor: props.mode === "dark" ? "#212529" : "white",
+    width: "100vw",
   };
 
   return (
@@ -31,7 +32,7 @@ export default function About(props) {
         style={myStyle}
       >
         <div className="accordion-item">
-          <h2 className="accordion-header aboutHead" id="flush-headingOne">
+          <h2 className="accordion-header aboutHead" id="flush-headingOne" style={myStyle}>
             <button
               className="accordion-button collapsed title title"
               type="button"
@@ -66,7 +67,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header aboutHead" id="flush-headingTwo">
+          <h2 className="accordion-header aboutHead" id="flush-headingTwo" style={myStyle}>
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -116,7 +117,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header aboutHead" id="flush-headingThree">
+          <h2 className="accordion-header aboutHead" id="flush-headingThree" style={myStyle}>
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -179,7 +180,7 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header aboutHead" id="flush-headingFour">
+          <h2 className="accordion-header aboutHead" id="flush-headingFour" style={myStyle}>
             <button
               className="accordion-button collapsed title"
               type="button"
@@ -210,9 +211,9 @@ export default function About(props) {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header aboutHead" id="flush-headingFive">
+          <h2 className="accordion-header aboutHead" id="flush-headingFive" style={myStyle}>
             <button
-              className="accordion-button collapsed title"
+              className="accordion-button collapsed title "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFive"
