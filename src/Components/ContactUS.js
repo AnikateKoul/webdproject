@@ -159,7 +159,7 @@ export default function ContactUS(props) {
                         />
                         {/* <small
                           id="namevalid"
-                          class="form-text text-muted invalid-feedback"
+                          className="form-text text-muted invalid-feedback"
                         >
                           {formErrors.firstname}
                         </small> */}

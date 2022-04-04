@@ -10,7 +10,7 @@ export default function Place3(props) {
           src="https://images.unsplash.com/photo-1597165253287-d06597132da6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
           alt=""
         />
-        <div class="bottom-left">Ooty</div>
+        <div className="bottom-left">Ooty</div>
       </div>
       <div className="cards">
         <div className={`card bg-${props.mode === "light" ? "light" : "dark"}`}>
