@@ -32,7 +32,7 @@ export default function Slider(props) {
   <Carousel.Item interval={1000}>
   <Link to="/place3"><img
       classNameName="d-block w-100"
-      src="https://images.unsplash.com/photo-1500614922032-b6dd337b1313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
@@ -43,7 +43,7 @@ export default function Slider(props) {
     <Carousel.Item interval={1000}>
     <Link to="/place4"><img
       classNameName="d-block w-100"
-      src="https://images.unsplash.com/photo-1593118845043-359e5f628214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      src="https://scoutmytrip.com/wp-content/uploads/2018/05/Lakes-in-Ladakh-Featured-1024x1024.jpg"
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
