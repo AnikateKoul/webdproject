@@ -119,6 +119,12 @@
   .reviews h1 {
     font-size: 3.5rem;
   }
+  .carouselContent{
+    font-size:1.1em;
+}
+.carouselContent>h3{
+    font-size:1.5em;
+}
 }
 @media screen and (max-width: 750px) {
   .review {
@@ -132,3 +138,5 @@
 .profile:nth-child(odd) img{
   object-position: 100% 10%;
 }
+
+

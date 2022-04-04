@@ -49,7 +49,7 @@ export default function SignupForm(props) {
         </div>
         <form action="" style={myStyle} id="sgnForm">
           <h3 style={myStyle}>Sign Up Here </h3>
-          <label className="SUlabel" for="username" style={myStyle}>
+          <label className="SUlabel" htmlFor="username" style={myStyle}>
             Name
           </label>
           <input
@@ -60,7 +60,7 @@ export default function SignupForm(props) {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <label className="SUlabel" for="email" required style={myStyle}>
+          <label className="SUlabel" htmlFor="email" required style={myStyle}>
             Email
           </label>
           <input
@@ -71,7 +71,7 @@ export default function SignupForm(props) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label className="SUlabel" for="password" required style={myStyle}>
+          <label className="SUlabel" htmlFor="password" required style={myStyle}>
             Password
           </label>
           <input
@@ -82,7 +82,7 @@ export default function SignupForm(props) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label className="SUlabel" for="contact" required style={myStyle}>
+          <label className="SUlabel" htmlFor="contact" required style={myStyle}>
             Contact No.
           </label>
           <input

@@ -6,19 +6,11 @@ export default function About(props) {
   let myStyle = {
     color: props.mode === "dark" ? "white" : "#212529",
     backgroundColor: props.mode === "dark" ? "#212529" : "white",
-    width: "100vw",
+    width: "95vw",
   };
 
   return (
     <div className="container" style={{ paddingTop: "70px" }}>
-      {/* <div id="gif">
-        {" "}
-        <img
-          src="https://media0.giphy.com/media/k8aQj7ocnGObrJLsja/giphy.gif?cid=ecf05e47wr7n7b4bfawuxguqbn5izpj5louqg6u47w59duck&rid=giphy.gif&ct=g"
-          alt="..."
-          id="giffy"
-        />
-      </div> */}
       <div className="aboutUs">
       <div id="gif">
         <video width="100%" height="100%" autoPlay muted loop id="giffy">
@@ -27,7 +19,7 @@ export default function About(props) {
         </video>
       </div>
       <div
-        className="accordion accordion-flush"
+        className="accordion accordion-flush container"
         id="accordionFlushExample"
         style={myStyle}
       >

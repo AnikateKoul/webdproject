@@ -9,7 +9,7 @@ export default function Slider(props) {
         <Carousel fade="true" width="400px" variant={props.mode}>
   <Carousel.Item interval={1000}>
     <Link to="/place1"><img
-      classNameName="d-block w-100"
+      className="d-block w-100"
       src="https://images.unsplash.com/photo-1641933002719-4c878c83f48e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="First slide"
     /></Link>
@@ -20,7 +20,7 @@ export default function Slider(props) {
   </Carousel.Item>
   <Carousel.Item interval={1000}>
   <Link to="/place2"><img
-      classNameName="d-block w-100"
+      className="d-block w-100"
       src="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
       alt="Second slide"
     /></Link>
@@ -31,7 +31,7 @@ export default function Slider(props) {
   </Carousel.Item>
   <Carousel.Item interval={1000}>
   <Link to="/place3"><img
-      classNameName="d-block w-100"
+      className="d-block w-100"
       src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
       alt="Third slide"
     /></Link>
@@ -42,7 +42,7 @@ export default function Slider(props) {
     </Carousel.Item>
     <Carousel.Item interval={1000}>
     <Link to="/place4"><img
-      classNameName="d-block w-100"
+      className="d-block w-100"
       src="https://scoutmytrip.com/wp-content/uploads/2018/05/Lakes-in-Ladakh-Featured-1024x1024.jpg"
       alt="Third slide"
     /></Link>
@@ -53,7 +53,7 @@ export default function Slider(props) {
     </Carousel.Item>
     <Carousel.Item interval={1000}>
     <Link to="/place5"><img
-      classNameName="d-block w-100"
+      className="d-block w-100"
       src="https://images.unsplash.com/photo-1577089907583-991f1ba4a03c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="Third slide"
     /></Link>

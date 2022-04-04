@@ -3,7 +3,28 @@ import { useState, useEffect } from "react";
 import "./Users.css";
 
 export default function Users(props) {
-  // dynamicBG();
+  var dynamicBG = () => {
+    let feelsLike=document.getElementById('feelsLike');
+    if (feelsLike!=null) {
+      let temp = Number(feelsLike.innerText);
+      let weatherReport = document.getElementById("weatherReport");
+      if (temp < 15) {
+        weatherReport.classList.add('cold');
+        weatherReport.classList.remove('hot');
+        weatherReport.classList.remove('mid');
+      }
+      else if (temp >=29) {
+        weatherReport.classList.add('hot');
+        weatherReport.classList.remove('cold');
+        weatherReport.classList.remove('mid');
+        }
+      else{
+        weatherReport.classList.add('mid');
+        weatherReport.classList.remove('hot');
+        weatherReport.classList.remove('cold');
+      }
+    } 
+  }
   const [user, setUser] = useState([]);
   const options = {
     method: "GET",
@@ -29,12 +50,6 @@ export default function Users(props) {
   useEffect(() => {
     fetchData();
   }, []);
-  // function Form() {
-  //   function handleClick(e) {
-  //     e.preventDefault();
-  //     console.log('You clicked submit.');
-  //   }
-  // }
 
   const HandleClick = () => {
     let city = document.getElementById("textBox").value;
@@ -44,34 +59,6 @@ export default function Users(props) {
   useEffect(() => {
     fetchData();
   }, []);
-  let buttonWeather=document.getElementById('weatherRpt');
-  if(buttonWeather){
-  var dynamicBG=function dynamicBG(){
-    let feelsLike=document.getElementById('feelsLike');
-    if (feelsLike!=null) {
-      let temp = Number(feelsLike.innerText);
-      let weatherReport = document.getElementById("weatherReport");
-      if (temp < 15) {
-        console.log(temp);
-        weatherReport.classList.add('cold');
-        weatherReport.classList.remove('hot');
-        weatherReport.classList.remove('mid');
-      }
-      else if (temp >=29) {
-        console.log(temp);
-        weatherReport.classList.add('hot');
-        weatherReport.classList.remove('cold');
-        weatherReport.classList.remove('mid');
-        }
-      else{
-        console.log(temp);
-        weatherReport.classList.add('mid');
-        weatherReport.classList.remove('hot');
-        weatherReport.classList.remove('cold');
-      }
-    } 
-  }
-}
 
   return (
     <>

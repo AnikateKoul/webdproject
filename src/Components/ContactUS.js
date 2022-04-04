@@ -16,8 +16,6 @@ export default function ContactUS(props) {
     const { name , value } = e.target;
     setFormValues({...formValues, [name] : value});
     setFormErrors(validate(formValues));
-
-    // console.log(formValues);
   }
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -145,17 +143,17 @@ export default function ContactUS(props) {
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://twitter.com/iiit_lucknow" target={"_blank"} rel={"noreferrer"}> <FaTwitter/></a> Twitter
+                        <a href="https://twitter.com/iiit_lucknow" target={"_blank"} rel={"noreferrer"}> <FaTwitter/> Twitter</a>
                       </p>
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://www.facebook.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaFacebook/></a> Facebook 
+                        <a href="https://www.facebook.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaFacebook/> Facebook</a> 
                       </p>
                     </div>
                     <div className="svgs">
                       <p>
-                        <a href="https://www.instagram.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaInstagram/></a> Instagram 
+                        <a href="https://www.instagram.com/iiitlucknow/" target={"_blank"} rel={"noreferrer"}> <FaInstagram/> Instagram </a>
                       </p>
                     </div>
                   </div>
@@ -173,12 +171,6 @@ export default function ContactUS(props) {
                           defaultValue={formValues.firstname}
                           onChange={handleChange}
                         />
-                        {/* <small
-                          id="namevalid"
-                          className="form-text text-muted invalid-feedback"
-                        >
-                          {formErrors.firstname}
-                        </small> */}
                         <p style={{ color: 'red' }}>{formErrors.firstname}</p>
                         <label htmlFor="form-first-name" className='contactLab'>First name</label>
                       </div>
