@@ -79,7 +79,7 @@ export default function Users(props) {
         <h2 className={`text-${props.mode === "light" ? "dark" : "light"}`}>
           Check the Weather Report of your favourite city here!
         </h2>
-        <div className="md-form md-outline my-3 form-floating checking">
+        <div className="md-form md-outline mx-2 my-3 form-floating checking">
           <input
             type="text"
             id="textBox"
@@ -98,7 +98,7 @@ export default function Users(props) {
           </button>
         </div>
 
-        <table class="table text-light ourTable">
+        <table className="table text-light ourTable" style={{width: '90vw' , textAlign: 'center', margin: 'auto' }}>
           <thead>
             <tr className="bg-dark">
               <th scope="col">City name</th>

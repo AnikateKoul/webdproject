@@ -5,8 +5,13 @@ export default function SignupForm(props) {
     let myStyle = {
         color: props.mode === "dark" ? "white" : "#212529",
         backgroundColor: props.mode === "dark" ? "#212529" : "white",
-        border: props.mode === "dark" ? "white" : "#212529",
       };
+      let boxStyle = {
+        color: props.mode === "dark" ? "white" : "#212529",
+        backgroundColor: props.mode === "dark" ? "#212529" : "white",
+        border: props.mode === "dark" ? "1px solid #445" : "1px solid rgb(173,173,181)",
+      }
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -46,7 +51,7 @@ export default function SignupForm(props) {
           </label>
           <input
             type="text"
-            style={{ border: "1px solid rgb(173,173,181)", color: "black" }}
+            style={boxStyle}
             placeholder="Name" 
             id="username" className="sgnInpt"
             value={name}
@@ -57,7 +62,7 @@ export default function SignupForm(props) {
           </label>
           <input
             type="email"
-            style={{ border: "1px solid rgb(173,173,181)", color: "black" }}
+            style={boxStyle}
             placeholder="Email" className="sgnInpt" 
             id="email"
             value={email}
@@ -68,7 +73,7 @@ export default function SignupForm(props) {
           </label>
           <input
             type="password"
-            style={{ border: "1px solid rgb(173,173,181)", color: "black" }}
+            style={boxStyle}
             placeholder="Password" className="sgnInpt"
             id="password"
             value={password}
@@ -79,7 +84,7 @@ export default function SignupForm(props) {
           </label>
           <input
             type="text"
-            style={{ border: "1px solid rgb(173,173,181)", color: "black" }}
+            style={boxStyle}
             placeholder="Contact No." className="sgnInpt"
             id="contactno"
             value={contactno}
