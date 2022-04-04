@@ -133,3 +133,6 @@
     font-size: 2.5rem;
   }
 }
+.profile:nth-child(odd) img{
+  object-position: 100% 10%;
+}

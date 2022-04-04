@@ -6,8 +6,9 @@ export default function Gallery(props) {
       <>
       <div style={{marginTop: "70px"}}></div>
     <div className="main3">
-       {/* <img src="https://i.pinimg.com/originals/40/4f/20/404f20864c97713bbdf7a97d99e5fdb4.jpg" alt=""/> */}
-        <img src="https://moosenetwork.com/wp-content/uploads/2020/09/SASQ-HIGH-1-Tofino-beach-campfire-night.jpg" alt="" />
+       
+        
+        <img src="https://www.seymourhotels.com/media/4301/greenhills_bonfire.jpg?width=900&height=597&mode=crop"/>
     <div className="main3-galleryText">
         <p><b>WELCOME </b>TO THE GALLERY</p>
     </div>
@@ -18,7 +19,8 @@ export default function Gallery(props) {
         <img src="https://images.unsplash.com/photo-1605015239078-95f963a8b35c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80" alt=""/>
         <img src="https://c4.wallpaperflare.com/wallpaper/366/16/33/waterfall-photography-india-nature-wallpaper-preview.jpg" alt=""/>
         <img src="https://images.unsplash.com/photo-1579873143080-1b34d281f6e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="" />
-        <img src="https://www.seymourhotels.com/media/4301/greenhills_bonfire.jpg?width=900&height=597&mode=crop"/>
+        <img src="https://moosenetwork.com/wp-content/uploads/2020/09/SASQ-HIGH-1-Tofino-beach-campfire-night.jpg" alt="" /> 
+        {/* <img src="https://images.unsplash.com/photo-1569918970203-ea053ffda098?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" /> */}
         </div>
         <div className="galleryCol">
             <img src="https://images.unsplash.com/photo-1590765759804-0b2b579820b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b290eXxlbnwwfHwwfHw%3D&w=1000&q=80" alt=""/>
@@ -40,6 +42,7 @@ export default function Gallery(props) {
             <img src="https://images.unsplash.com/photo-1589868033293-a721123d31ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt=""/>     
             <img src="https://downloader.la/temp/[Downloader.la]-624ad28c6ab96.jpg" alt="" />
             <img src="https://i0.wp.com/triparambh.com/wp-content/uploads/2019/06/BB.jpg?fit=640%2C480&ssl=1" alt="" />
+            {/* <img src="https://i.pinimg.com/originals/40/4f/20/404f20864c97713bbdf7a97d99e5fdb4.jpg" alt=""/> */}
         </div>
         
     </div>

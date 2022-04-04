@@ -90,13 +90,30 @@
 }
 .phone,
 .email,
-.address,
-.svgs {
+.address,.svgs {
   display: flex;
   color: white;
   font-size: 1.3rem;
   margin: 5% auto;
   padding: 0px 5%;
+}
+.svgs{
+  font-size: 1.25rem;
+  display: inline-flex;
+  width: fit-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.svgs p a{
+  color: black;
+}
+.svgs:hover{
+  cursor: pointer;
+  color: #71717a;
+}
+.svgs p a:hover{
+  cursor: pointer;
+  color: #71717a;
 }
 
 .leftDiv {

@@ -16,7 +16,9 @@
     color: white;
     top: 23%;
     font-size: 3rem;
-    color: silver;
+    /* color: silver; */
+    /* color: black; */
+    color: gray;
     word-spacing: 5px;
     letter-spacing: 3px;
     Text-align: center;
