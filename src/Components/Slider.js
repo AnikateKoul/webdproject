@@ -7,7 +7,7 @@ export default function Slider(props) {
     <>
     <div style={{marginTop: "70px"}}>
         <Carousel fade="true" width="400px" variant={props.mode}>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={1000}>
     <Link to="/place1"><img
       classNameName="d-block w-100"
       src="https://images.unsplash.com/photo-1641933002719-4c878c83f48e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -18,10 +18,10 @@ export default function Slider(props) {
       <p>Live with no excuses and travel with no regrets.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={1000}>
   <Link to="/place2"><img
       classNameName="d-block w-100"
-      src="https://images.pexels.com/photos/4430322/pexels-photo-4430322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      src="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
       alt="Second slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
@@ -29,18 +29,18 @@ export default function Slider(props) {
       <p style={{color: "white"}}>We travel not to escape life but for life not to escape us.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={1000}>
   <Link to="/place3"><img
       classNameName="d-block w-100"
-      src="https://images.unsplash.com/photo-1638886540342-240980f60d25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/Ooty-In-Summer-cover_17th-Jan.jpg"
       alt="Third slide"
     /></Link>
     <Carousel.Caption className='carouselContent'>
-      <h3 style={{color: "white"}}>Ooty</h3>
-      <p style={{color: "white"}}>Life is either a daring adventure or nothing at all.</p>
+      <h3 style={{color: "black"}}>Ooty</h3>
+      <p style={{color: "black"}}>Life is either a daring adventure or nothing at all.</p>
     </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item interval={2000}>
+    <Carousel.Item interval={1000}>
     <Link to="/place4"><img
       classNameName="d-block w-100"
       src="https://scoutmytrip.com/wp-content/uploads/2018/05/Lakes-in-Ladakh-Featured-1024x1024.jpg"
@@ -51,7 +51,7 @@ export default function Slider(props) {
       <p style={{color: "black"}}>Traveling – it leaves you speechless, then turns you into a storyteller.</p>
     </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item interval={2000}>
+    <Carousel.Item interval={1000}>
     <Link to="/place5"><img
       classNameName="d-block w-100"
       src="https://images.unsplash.com/photo-1577089907583-991f1ba4a03c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -71,19 +71,19 @@ export default function Slider(props) {
             Our Testimonials</h1>
             <div className="review">
                 <div className="profile"><img
-                        src="https://pps.whatsapp.net/v/t61.24694-24/263023318_151581453862812_2980719557641452055_n.jpg?ccb=11-4&oh=01_AVyAj7nIWgaDPo7BLgWSFoH2d_fYhamzAIYN6fxW1GHyVA&oe=62515E7D"
+                        src="https://d3nn873nee648n.cloudfront.net/900x600/19008/220-SM887741.jpg"
                         alt=""/></div>
                 <div className="rev"> <p className='revContent'>"The trip was wonderful!  On Maui we enjoyed the pool and beach, the LeLe Luau was outstanding, I play the Kaanapali Kai golf course, shopping in Lahaina, lots of great dinners/mai tais and just cruising around the island made the time pass too quickly. It was a great way to celebrate 5 years together." ~ <b>Jenny</b></p></div>
             </div>
             <div className="review">
                 <div className="profile"><img
-                        src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                        src="https://i.pinimg.com/564x/fd/69/f1/fd69f124744622c22bad3fcfc6036d52.jpg"
                         alt=""/></div>
                 <div className="rev"> <p className='revContent'>"If there was a contest for the best travel blog, I would tell everyone to vote for me. Then I would go vote for Audrey and Dan. They tell heartwarming stories and take incredible, out-of-this-world photographs. Their blog focuses on cultural travel and sustainability issues (they even work with the UN Global Sustainable Tourism Council). I focus on the nuts and bolts of going places, whereas they focus on the people. They are simply great storytellers." ~ <b>Jake</b></p></div>
             </div>
             <div className="review">
                 <div className="profile"><img
-                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        src="https://i.pinimg.com/564x/4b/f7/34/4bf734cfb024b2a997ad7337e4aaf4c6.jpg"
                         alt=""/></div>
                 <div className="rev"> <p className='revContent'> "While I read many travel-hacking blogs, I visit this one reguarly because they provides industry analysis and behind-the-scenes information on loyalty programs and airlines. They don’t just provide trip reports or share deals and reward opportunities, they gives you context and a greater understanding of how travel hacking and airlines operate." ~ <b>Alex</b></p></div>
             </div>
