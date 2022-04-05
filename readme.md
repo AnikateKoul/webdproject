@@ -8,3 +8,6 @@ Prerequisites:
 1. You should have react, nodejs and mongoDB installed in your system beforehand.
 
 Hope u like it :)
+
+Our hosted site link : https://spontaneous-croissant-656b9c.netlify.app/
+Enjoy the experience
