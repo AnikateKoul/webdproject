@@ -9,5 +9,6 @@ Prerequisites:
 
 Hope u like it :)
 
-Our hosted site link : https://spontaneous-croissant-656b9c.netlify.app/
+Our hosted site link : https://aquamarine-pothos-1aad9b.netlify.app/
 Enjoy the experience
+The code is available on the github repository : https://github.com/AnikateKoul/webdproject
