@@ -4,6 +4,7 @@ import "./Place.css";
 export default function Place2(props) {
   return (
     <>
+    {/* This is the main code of Goa page*/}
       <div style={{ marginTop: "70px" }}></div>
       <div className="main1">
         <img

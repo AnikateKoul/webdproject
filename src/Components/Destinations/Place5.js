@@ -4,6 +4,7 @@ import "./Place.css";
 export default function Place5(props) {
   return (
     <>
+    {/* This is the main page of the Jaisalmer page */}
       <div style={{ marginTop: "70px" }}></div>
       <div className="main1">
         <img

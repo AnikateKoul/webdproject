@@ -88,6 +88,8 @@
   background-color: #1d4ed8;
   color: white;
 }
+
+/* This is for the styling of the information and svgs on the left side */
 .phone,
 .email,
 .address,.svgs {
@@ -115,7 +117,7 @@
   cursor: pointer;
   color: #22359e;
 }
-
+/* This is for the background image and styling of the left sided information */
 .leftDiv {
   background-image: url(https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
   background-repeat: no-repeat;
@@ -130,6 +132,7 @@
   height: 100%;
   border-radius: 2%;
 }
+/* This is for the responsiveness of the website at 1024px or below */
 @media screen and (max-width: 1024px) {
   .phone,
   .email,
@@ -141,6 +144,7 @@
     font-size: 2.5rem;
   }
 }
+/* This is for the responsiveness of the website at 800px or below */
 @media screen and (max-width: 800px) {
   .main2 {
     height: 150vh;

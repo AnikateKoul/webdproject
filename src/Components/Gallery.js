@@ -4,6 +4,7 @@ import "./Gallery.css";
 export default function Gallery(props) {
   return (
       <>
+      {/* This is the main gallery page */}
       <div style={{marginTop: "70px"}}></div>
     <div className="main3">
        

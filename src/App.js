@@ -16,7 +16,6 @@ import Place3 from "./Components/Destinations/Place3";
 import Place4 from "./Components/Destinations/Place4";
 import Place5 from "./Components/Destinations/Place5";
 import Users from "./Users";
-import axios from "axios";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 // import FlipCard from "./Components/FlipCard";
 
@@ -37,6 +36,7 @@ function App() {
   
   return (
     <>
+    {/* This is for the routing of the multi-page setup */}
       <Router>
         <Navbar mode={mode} toggleMode={toggleMode}/>
       <ScrollToTop>

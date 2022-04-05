@@ -5,6 +5,7 @@ import "./Navbar.css";
 export default function Navbar(props) {
   return (
     <>
+    {/* This is the navbar of the site */}
       <nav
         className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode==="light"?"light":"dark"}`}
         style={{ boxShadow: "0px 0px 10px grey", opacity: "0.95", marginBottom: "30px"}}

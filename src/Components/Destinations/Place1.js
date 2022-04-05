@@ -4,6 +4,7 @@ import "./Place.css";
 export default function Place1(props) {
   return (
     <>
+    {/* This is main code for Shimla page */}
       <div style={{ marginTop: "70px" }}></div>
       <div className="main1">
         <img

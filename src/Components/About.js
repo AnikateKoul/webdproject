@@ -3,21 +3,25 @@ import "./About.css";
 import MyVideo from "./MyVideo.mp4";
 
 export default function About(props) {
+  // This is for the dark mode toggling
   let myStyle = {
     color: props.mode === "dark" ? "white" : "#212529",
     backgroundColor: props.mode === "dark" ? "#212529" : "white",
     width: "95vw",
   };
 
+
   return (
     <div className="container" style={{ paddingTop: "70px" }}>
       <div className="aboutUs">
       <div id="gif">
+      {/* This is the Wanderlusters animation video */}
         <video width="100%" height="100%" autoPlay muted loop id="giffy">
           <source src={MyVideo} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>
+      {/* These are the accordion items */}
       <div
         className="accordion accordion-flush container"
         id="accordionFlushExample"

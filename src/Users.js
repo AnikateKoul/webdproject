@@ -51,7 +51,7 @@ export default function Users(props) {
     fetchData();
   }, []);
 
-  const HandleClick = () => {
+  const HandleClick = () => { // this is the api fetch
     let city = document.getElementById("textBox").value;
     url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}&country=India`;
     fetchData();
@@ -61,7 +61,8 @@ export default function Users(props) {
   }, []);
 
   return (
-    <>
+    <> 
+    {/* This is the main part of the weather api */}
       <div className="weatherReport" id="weatherReport">
         <h2 className={`text-${props.mode === "light" ? "dark" : "light"}`}>
           Check the Weather Report of your favourite city here!
@@ -103,7 +104,7 @@ export default function Users(props) {
               >
                 No such place exists
               </td>
-            ) : (
+            ) : (   
               <tr className={` bg-secondary text-light lastRow`}>
                 <th scope="row">
                   {document.getElementById("textBox")
@@ -114,7 +115,8 @@ export default function Users(props) {
                 <td id="feelsLike">{user.feels_like}</td>
                 <td>{user.humidity}</td>
               </tr>
-            )}
+            )} 
+            {/* The abouve part is conditional rendering */}
           </tbody>
         </table>
       </div>

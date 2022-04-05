@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Thanks(props) {
+  // This page will appear when you successfully submit a query on the thanks page
   return (
     <div style={{ position: "relative", marginTop: "70px" }}>
       <div className={`jumbotron text-center text-${props.mode==='light'?'dark':'light'}`}>

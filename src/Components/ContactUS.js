@@ -6,6 +6,7 @@ import { FaAddressCard } from "react-icons/fa";
 import { FaEnvelope, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function ContactUS(props) {
+  // All this data is for the validation of the data entered
   const onSubmit = data => console.log(data);
   const initialValues = { firstname: "", lastname: "", email: "", companyName: "", phone: "", subject: "", issue: ""};
   const [formValues, setFormValues] = useState(initialValues);
@@ -88,7 +89,8 @@ export default function ContactUS(props) {
   }, [formErrors]);
 
   return (
-    <>
+    <> 
+    {/* These are the main headings */}
       <div style={{ marginTop: "70px" }}></div>
       <div className="main2">
         <div style={{ height: "75px" }}>
@@ -115,6 +117,7 @@ export default function ContactUS(props) {
                   className={`col-lg-5 col-md-12 mb-0 mb-md-0 text-${props.mode === "light" ? "dark" : "light"
                     } leftDiv`}
                 >
+                {/* These are information on the left side */}
                   <div className="innerLeftDiv">
                     <h1 className="font-weight-bold leftDivHeading">
                       Contact Information
@@ -158,6 +161,7 @@ export default function ContactUS(props) {
                     </div>
                   </div>
                 </div>
+                {/* This is the main form on the page */}
                 <div className="col-lg-7 col-md-12 mb-4 mb-md-0 form-floating rightDiv">
                 <form onSubmit={handleSubmit} id="contactForm">
                   <div className="row">

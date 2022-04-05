@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { IconName } from "react-icons/io5";
 
 export default function Footer(props) {
   return (
     <>
+    {/* This is the footer of the website */}
     <div className="d-flex flex-column ">
       <footer
         className={`text-center fixed-bottom text-lg-start  bg-${

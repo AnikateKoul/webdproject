@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './SignupForm.css';
 
 export default function SignupForm(props) {
-  const navigate = useNavigate();
-    let myStyle = {
+  const navigate = useNavigate(); // this is for redirection
+    let myStyle = {  // this is for the dark mode toggle
         color: props.mode === "dark" ? "white" : "#212529",
         backgroundColor: props.mode === "dark" ? "#212529" : "white",
       };
@@ -13,13 +13,13 @@ export default function SignupForm(props) {
         backgroundColor: props.mode === "dark" ? "#212529" : "white",
         border: props.mode === "dark" ? "1px solid #445" : "1px solid rgb(173,173,181)",
       }
-
+      // these are for storing and updation of values entered
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [contactno, setContactNo] = useState("");
 
-    const handleOnSubmit = async (e) => {
+    const handleOnSubmit = async (e) => { // this is for sending data to the database
         e.preventDefault();
         let result = await fetch(
         'http://localhost:5000/register', {
@@ -37,11 +37,12 @@ export default function SignupForm(props) {
             setEmail("");
             setPassword("");
             setContactNo("");
-            navigate("/login");
+            navigate("/login"); // this will redirect to the login page
         }
     }
   return (
     <>
+    {/* This is main code of the login page */}
       <div className="main">
         <div className="background">
           <div className="shape"></div>

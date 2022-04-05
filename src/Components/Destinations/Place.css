@@ -1,3 +1,4 @@
+/* These are google fonts links */
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&display=swap");
 @import url('http://fonts.cdnfonts.com/css/bickham-script-pro');
 * {
@@ -63,7 +64,7 @@
   word-spacing: 3px;
   font-size: 1.2rem;
 }
-
+/* This is for the responsiveness of the code at 800px or lower */
 @media screen and (max-width: 800px) {
   .card {
     flex-direction: column;
@@ -88,6 +89,8 @@
     flex-direction: row;
   }
 }
+
+/* This is for the responsiveness of the screen at 1024px */
 @media screen and (max-width: 1024px) {
   .bottom-left {
     font-size: 3rem;

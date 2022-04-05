@@ -5,15 +5,13 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
-  var result;
-  var ans = 0;
   const navigate = useNavigate();
   const [email, setLoginEmail] = useState("");
   const [password, setLoginPassword] = useState("");
 
   const login = async (e) => {
     e.preventDefault();
-    result = await fetch("http://localhost:5000/login", {
+    let result = await fetch("http://localhost:5000/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {
@@ -21,13 +19,11 @@ function LoginForm() {
       },
     });
     result = await result.json();
-    console.log(result);
     if (result) {
-      alert("Data saved successfully");
+      alert("Logged in successfully");
       document.getElementById('lgnNav').style.display='none';
       document.getElementById('lgoutNav').style.display="block";
       document.getElementById('navBut').style.display='none';
-      console.log(result);
       navigate("/");
 
       
@@ -75,9 +71,6 @@ function LoginForm() {
             <span></span>
             Login
           </a>
-          {/* {
-            (ans) ? (<Link to="/thank"><button type="submit" id="lgnLink" onClick={login}>Login</button></Link>) : (<button type="submit" id="lgnLink" onClick={login}>Login</button>)
-          } */}
         </form>
       </div>
     </>
