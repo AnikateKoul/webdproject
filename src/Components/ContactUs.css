@@ -126,6 +126,7 @@
   border-radius: 2%;
   padding: 0;
 }
+/* For glassmorphism*/
 .innerLeftDiv {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

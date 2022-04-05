@@ -6,6 +6,7 @@
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
+/*For the Main Image at the top*/
 .main3{
     width: 100vw;
     position: relative;
@@ -81,17 +82,12 @@ img{
 .gallery .galleryCol img{
     padding: 1% 1%;
 }
+/*For zoom in when hovered*/
 .gallery img:hover{
     cursor: pointer;
     transform: scale(1.15);
     transition-duration: 0.5s;
     z-index: 1;
-}
-@media screen and (max-width: 600px) {
-    .galleryCol {
-      flex: 100%;
-      max-width: 100%;
-    }
 }
 @media screen and (max-width: 1024px){
     .main3-galleryText{
@@ -107,5 +103,11 @@ img{
       .galleryCol img{
           display: flex;
           flex: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .galleryCol {
+      flex: 100%;
+      max-width: 100%;
     }
 }

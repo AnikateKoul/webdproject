@@ -67,7 +67,7 @@ app.get("/", (req, resp) => {
   // If you see App is working means
   // backend working properly
 });
-
+//To save user's data on Sign Up
 app.post("/register", async (req, resp) => {
   try {
     const user = new User(req.body);
@@ -84,6 +84,7 @@ app.post("/register", async (req, resp) => {
     resp.send("Something Went Wrong");
   }
 });
+//To verify user's data at login
 app.post("/login", async (req, res) => {
   try {
     const user2 = new User2(req.body);
