@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./Users.css";
 
 export default function Users(props) {
+  /*For changing BG dynamically*/ 
   var dynamicBG = () => {
     let feelsLike=document.getElementById('feelsLike');
     if (feelsLike!=null) {
