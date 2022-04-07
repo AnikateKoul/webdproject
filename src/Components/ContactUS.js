@@ -92,10 +92,10 @@ export default function ContactUS(props) {
     <> 
     {/* These are the main headings */}
       <div style={{ marginTop: "70px" }}></div>
-      <div className="main2">
-        <div style={{ height: "75px" }}>
+      <div className="main2 py-5">
+        {/* <div style={{ height: "75px" }}> */}
 
-          <div className="container my-5 py-5 z-depth-1 containerTemp">
+          <div className="container py-5 z-depth-1 containerTemp">
             <section className="px-md-5 mx-md-5 text-center text-lg-left">
               <h1
                 className={`font-weight-bold text-${props.mode === "light" ? "dark" : "light"
@@ -281,10 +281,10 @@ export default function ContactUS(props) {
                 </div>
               </div>
             </section>
-          </div>
+          {/* </div> */}
         </div>
       </div>
-      <div style={{ height: "100px" }}></div>
+      {/* <div style={{ height: "100px" }}></div> */}
     </>
   );
 }

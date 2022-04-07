@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 150vh;
+  /* min-height: 150vh; */
   margin-bottom: 0;
 }
 .containerTemp {
@@ -147,9 +147,9 @@
 }
 /* This is for the responsiveness of the website at 800px or below */
 @media screen and (max-width: 800px) {
-  .main2 {
+  /* .main2 {
     height: 150vh;
-  }
+  } */
   .phone,
   .email,
   .address,

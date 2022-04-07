@@ -63,6 +63,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
+    background-color: #202124;
 }
 .galleryCol{
     width: 25%;
