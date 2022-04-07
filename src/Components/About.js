@@ -24,7 +24,7 @@ export default function About(props) {
       </div>
       {/* These are the accordion items */}
       <div
-        className="accordion accordion-flush container"
+        className="accordion accordion-flush container aboutContent"
         id="accordionFlushExample"
         style={myStyle}
       >
